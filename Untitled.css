@@ -8,7 +8,6 @@
  *   box-shadow : 0px 0px 10px black !important;
  * }
 */
-/*! normalize.css v3.0.2 | MIT License | git.io/normalize */
 html {
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;
@@ -6771,6 +6770,7 @@ body {
 .cover .cover-image.cover-image-fixed {
   background-attachment: fixed;
 }
+<<<<<<< HEAD
 /* PINGENDO COMMENT DO NOT REMOVE */
 .timeline {
   position: relative;
@@ -6982,3 +6982,5 @@ body {
     padding: 0 100px 20px 20px;
   }
 }
+=======
+>>>>>>> origin/master
