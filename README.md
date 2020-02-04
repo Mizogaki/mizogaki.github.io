@@ -1,4 +1,4 @@
-URL: https://mizogaki-portfolio.com
+URL: https://www.mizogaki-portfolio.com/
 
 ### はじめに
 これまではGitHub Pagesで独自ドメインをHTTPS化するにはCloudFlareを仲介させるなどの対応が必要でしたが、この間公式にHTTPS対応がアナウンスされていたので、私のサイトも早速行ってみました。結構簡単にできたので手順を軽くまとめておきます。(HTTP -> HTTPS リダイレクトも行ってくれます)
