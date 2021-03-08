@@ -45,3 +45,4 @@ CNAMEの設定やAレコードの設定などを見直しましたが、解消�
 しかし1時間後、警告文は消え、何事もなかったかのようにhttpsでアクセスできるようになってました。なんだったんでしょう、、まあ気にしない。
 
 <img width="763" alt="スクリーンショット 2018-05-07 23.10.38.png" src="https://qiita-image-store.s3.amazonaws.com/0/73643/f0b2c38b-2e31-a9de-dd20-cb0be7f2d20e.png">
+
