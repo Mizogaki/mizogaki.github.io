@@ -195,8 +195,8 @@ h6 {
   font-size: 24px;
   transition: all 0.4s;
   outline: none !important;
-  background-color: #797979;
-  color: rgb(255, 255, 255);
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
   width: 40px;
   height: 40px;
   display: inline-flex;
@@ -462,7 +462,7 @@ section {
 .resume .resume-item {
   padding: 0 0 20px 20px;
   margin-top: -2px;
-  border-left: 2px solid #1f5297;
+  border-left: 2px solid #ffffff;
   position: relative;
 }
 
