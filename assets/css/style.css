@@ -689,24 +689,24 @@ section {
   justify-content: center;
   width: 54px;
   height: 54px;
-  background: #797979;
+  background: #ffffff;
   border-radius: 50%;
   transition: 0.5s;
-  border: 1px solid #797979;
+  border: 1px solid #ffffff;
 }
 
 .services .icon i {
-  color: #fff;
+  color: rgb(0, 0, 0);
   font-size: 24px;
   line-height: 0;
 }
 
 .services .icon-box:hover .icon {
-  background: #fff;
+  background: rgb(0, 0, 0);
 }
 
 .services .icon-box:hover .icon i {
-  color: #797979;
+  color: #ffffff;
 }
 
 .services .title {
