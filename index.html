@@ -1,709 +1,1187 @@
 <!DOCTYPE html>
-<html>
+<html lang="jp">
 
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <!-- PAGE settings -->
-  <link rel="icon" href="assets/edit/GeekBrew.app@0.5x.png">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
   <title>Portfolio Masahito Mizogaki - Freelance - 個人事業主 </title>
-  <meta name="description" content="2009年 大学卒業後 大手パチンコチェーンに就職入社後、業界に未来がないと悟った会社を見限り1年で退職。
+  <meta content="2009年 大学卒業後 大手パチンコチェーンに就職入社後、業界に未来がないと悟った会社を見限り1年で退職。
   2010年 IT業界で働く事を夢みるも現実は朝からパチンコ、夜は雀荘で過ごす、愛を誓い良き父親として真剣に働く事を決意なりたかったIT社長になる事を目標に、スタートアップでプログラマーとして働き始める
   2013年 東京で転勤する事を機会にフリーランスとして働き始めるIT業界のシステムを中心にプロジェクトマネージャーを5年間 エンジニア9年間 テックリードエンジニアを2年間 プロダクトオーナーを2年間近年シニアコンサルとして働き始めた
   その他にも Swiftの講師、iOS教材作成、SDK開発、OpenSouceへの コミット経験
   従事した案件では、企画・提案から顧客折衝・機器選定・要件定義・設計・構築・障害対応まで、上流から下流工程、エンジニアの採用、デザイナーへ指導などの業務経験する
-  現在は合同会社じれったいのCEOとして働きながらITコンサルタントやプロダクトオーナーとしてフリーランスで働く">
-  <meta name="keywords" content="mizogaki masahito みぞがき まさひと 溝垣 雅人 ミゾガキ マサヒト じれったい jirettai">
-  <!-- CSS dependencies -->
-  <link rel="stylesheet" href="neon.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css">
-  <!-- Script: Make my navbar transparent when the document is scrolled to top -->
-  <script src="js/navbar-ontop.js"></script>
-  <!-- Script: Animated entrance -->
-  <script src="js/animate-in.js"></script>
+  現在は合同会社じれったいのCEOとして働きながらITコンサルタントやプロダクトオーナーとしてフリーランスで働く" name="description">
+  <meta content="mizogaki masahito みぞがき まさひと 溝垣 雅人 ミゾガキ マサヒト じれったい  jirettai DMM TeamLab " name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon3.png" rel="icon">
+  <link href="assets/img/apple-touch-icon2.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
 </head>
 
-<body class="text-center">
-  <!-- Navbar -->
-  <!-- Cover -->
-  <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
-    <div class="container-fluid"> <button class="navbar-toggler navbar-toggler-right border-0 p-0" type="button" data-toggle="collapse" data-target="#navbar14">
-        <p class="navbar-brand mb-0 text-primary"><i class="fa fa-fw fa-bars fa-2x"></i></p>
-      </button>
-      <div class="collapse navbar-collapse justify-content-center" id="navbar14">
-        <ul class="navbar-nav mr-auto">
-          <li class="nav-item"> <a class="nav-link" href="#Top" contenteditable="true" target="_blank">Top</a> </li>
-          <li class="nav-item"> <a class="nav-link" href="#CareerSummary">Career Summary</a> </li>
-          <li class="nav-item"> <a class="nav-link" href="#CareerHistory">Career History</a> </li>
-          <li class="nav-item"> <a class="nav-link" href="#TechnicalSkills">Technical Skills&nbsp;</a> </li>
-          <li class="nav-item"> <a class="nav-link" href="#OpenSourceInitiative">Open Source Initiative</a> </li>
-          <li class="nav-item"> <a class="nav-link" href="#News">Past achievements</a> </li>
-          <li class="nav-item"> <a class="nav-link" href="#Jirettai">Jirettai</a> </li>
-          <li class="nav-item"> <a class="nav-link" href="#info">info</a> </li>
+<body>
+
+  <!-- ======= Mobile nav toggle button ======= -->
+  <i class="bi bi-list mobile-nav-toggle d-xl-none"></i>
+
+  <!-- ======= Header ======= -->
+  <header id="header">
+    <div class="d-flex flex-column">
+
+      <div class="profile">
+        <img src="assets/img/profile-img.jpg" alt="" class="img-fluid rounded-circle">
+        <h1 class="text-light"><a href="index.html">Masahito Mizogaki</a></h1>
+        <div class="social-links mt-3 text-center">
+          <a href="https://twitter.com/mizogaki" class="twitter"><i class="bx bxl-twitter"></i></a>
+          <a href="https://www.facebook.com/mizogaki.masahito" class="facebook"><i class="bx bxl-facebook"></i></a>
+          <a href="https://www.instagram.com/mmizogaki" class="instagram"><i class="bx bxl-instagram"></i></a>
+          <a href="https://www.linkedin.com/in/mizogaki" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+          <a href="https://github.com/Mizogaki" class="Github"><i class="bx bxl-github"></i></a>
+        </div>
+      </div>
+
+      <nav id="navbar" class="nav-menu navbar">
+        <ul>
+          <li><a href="#hero" class="nav-link scrollto active"><i class="bx bx-home"></i> <span><strong>Home</strong></span></a></li>
+          <li><a href="#about" class="nav-link scrollto"><i class="bx bx-user"></i> <span><strong>About</strong></span></a></li>
+          <li><a href="#resume" class="nav-link scrollto"><i class="bx bx-file-blank"></i> <span><strong>Resume</strong></span></a></li>
+          <li><a href="#portfolio" class="nav-link scrollto"><i class="bx bx-book-content"></i> <span><strong>Portfolio</strong></span></a></li>
+          <li><a href="#services" class="nav-link scrollto"><i class="bx bx-server"></i> <span><strong>Services</strong></span></a></li>
+          <li><a href="#contact" class="nav-link scrollto"><i class="bx bx-envelope"></i> <span><strong>Contact</strong></span></a></li>
         </ul>
-      </div>
+      </nav><!-- .nav-menu -->
     </div>
-  </nav>
-  <div class="text-center text-white align-items-center cover d-flex w-100 h-100 section-fade-in-out bg-info mb-5 pb-5" style="background-image: url(&quot;assets/edit/Migogaki_bw.jpg&quot;); background-position: center top; background-size: cover; background-repeat: repeat;" id="Top">
-    <div class="container py-5">
-      <div class="mx-auto col-lg-8 col-md-12">
-        <h3 class="text-center w-100 display-4"><b>&nbsp;Portfolio</b></h3>
-        <h5 class=""><b>Masahito Mizogaki&nbsp; since 2010</b><b><br></b></h5>
-      </div>
+  </header><!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="d-flex flex-column justify-content-center align-items-center">
+    <div class="hero-container" data-aos="fade-in">
+      <h1>Masahito Mizogaki</h1>
+      <p>I'm <span class="typed" data-typed-items="Jirettai.inc CEO,Senior Consultant,Product Owner,UX-UI Designer, Developer, Photographer"></span></p>
     </div>
-  </div>
-  <div class="section-fade-in-out cover w-100 h-100 text-center align-items-center d-flex mt-5 my-5 py-5 pt-5" style="	background-position: center Top;	background-size: cover;	background-repeat: repeat;	background-attachment: fixed;" id="CareerSummary">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-11 text-center pt-5 pb-5 py-5 my-5 mx-auto mt-5">
-          <h1>Career Summary</h1>
-          <p class="text-center"><b><br>2009 年 大学卒業後 大手パチンコチェーンに就職<br>&nbsp; 入社後、業界に未来がないと悟った</b><br><b>会社を見限り 1年で退職<br><br>2010 年 IT業界で働く事を夢みるも</b><br><b>現実は朝からパチンコ、夜は雀荘で過ごす</b><br><b>&nbsp;</b><br><b>自分の子供ができたと告げられ、愛を誓い</b><br><b>良き父親として真剣に働く事を決意</b><br><br><b>なりたかったIT社長になる事を目標に、</b><br><b>スタートアップでプログラマーとして働き始める<br><br>&nbsp; 2013 年 東京で転勤する事を機会に</b><br><b>フリーランスとして働き始める<br><br>&nbsp; IT業界のシステムを中心に</b><br><b>プロジェクトマネージャーを5</b><b>年間&nbsp;</b><br><b>エンジニア9年間&nbsp;<br>テックリードエンジニアを2年間</b><br><b>&nbsp;プロダクトオーナー</b>を2年間<br><b>近年シニアコンサルとして働き始めた<br><br>&nbsp;その他にも Swiftの講師、iOS教材作成、SDK開発、</b><br><b>OpenSouceへの コミット経験</b><br><br><b>従事した案件では、<br>&nbsp;</b>事業計画提案・競合分析・運用支援・<br><b>企画・提案から顧客折衝・機器選定・要件定義・</b><br><b>設計・構築・障害対応まで、上流から下流工程、</b><br><b>エンジニアの採用、</b><br><b>デザイナーへ指導などの業務経験する<br><br>&nbsp; &nbsp;現在は合同会社じれったいのCEOとして働きながら<br>&nbsp;ITコンサルタントやプロダクトオーナーとして</b><br><b>フリーランスで働く<br></b><br></p>
+  </section><!-- End Hero -->
+
+  <main id="main">
+
+    <!-- ======= About Section ======= -->
+    <section id="about" class="about">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>About</h2>
+          <p>
+            <small> 2009年 03月 大学卒業後 大手パチンコチェーンに就職 入社後、業界に未来がないと悟った会社を見限り1年で退職<br></small>
+            <small> 2010年 04月 IT業界で働く事を夢みるも 現実は朝からパチンコ三昧 夜は雀荘にて真剣勝負の日々を過ごす<br></small>
+            <small> 2010年 09月 セフレから子供ができた告げられる 人生の岐路に立たされる<br></small>
+            <small> 2010年 11月 良き父親として真剣に働く事を決意する 独学でプログラミングを学び本気で働き始める<br></small>
+            <small> 2013年 02月 東京で転勤する事を機に 冷め切った夫婦関係を清算しフリーランスとして働き始める<br></small>
+            <small> 2017年 04月 目標であった起業をする IT社長になる</small>
+          </p>
         </div>
-      </div>
-      <div class="row"></div>
-    </div>
-  </div>
-  <div class="mt-5 pt-5" id="CareerHistory">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12 mt-5">
-          <h1 class="mt-5">Career History</h1>
-        </div>
-      </div>
-      <div class="row">
-        <div class="p-4 col-md-6 col-12 col-sm-12 col-lg-4">
-          <h4><b>ToyotaMedia</b></h4>
-          <p class="mb-0">UI / UX Designer /iOS Developer</p>
-          <p class="mb-0"><u><a href="https://www.toyotaconnected.co.jp/company/" target="_blank" class="text-decoration-none">https://www.toyotaconnected.co.jp</a>/</u></p>
-        </div>
-        <div class="p-4 col-md-6 col-12 col-sm-12 col-lg-4">
-          <h4><b>TeamLab</b></h4>
-          <p class="mb-0">iOS Developer<br></p>
-          <h6><a href="https://www.team-lab.com/" target="_blank" class="text-decoration-none"><u>https://www.team-lab.com/</u></a></h6>
-        </div>
-        <div class="p-4 col-md-6 col-12 col-sm-12 col-lg-4">
-          <h4 contenteditable="true"><b>RecruitCarrier</b></h4>
-          <p class="mb-0 mx-auto">Enginner / Director / Designer </p>
-          <p class="mb-0 text-white"><a href="https://www.recruitcareer.co.jp/" target="_blank" class="text-decoration-none"><u>https://www.recruitcareer.co.jp/</u></a></p>
-        </div>
-        <div class="p-4 col-md-6 col-12 col-sm-12 col-lg-4">
-          <h4><b>RecruitTechnologies</b></h4>
-          <p class="mb-0">iOS Developer&nbsp;<br></p>
-          <p class="mb-0"><a href="https://recruit-tech.co.jp/" target="_blank" class="text-decoration-none"><u>https://recruit-tech.co.jp/</u></a></p>
-        </div>
-        <div class="p-4 col-md-6 col-12 col-sm-12 col-lg-4">
-          <h4><b>DMM.com</b></h4>
-          <p class="mb-0"> Technical Lead Engineer</p>
-          <p class="mb-0"><a href="https://dmm-corp.com/" target="_blank" class="text-decoration-none"><u>https://dmm-corp.com/</u></a></p>
-        </div>
-        <div class="p-4 col-md-6 col-12 col-sm-12 col-lg-4">
-          <h4><b>Cyber-Z</b></h4>
-          <p class="mb-0">Moblie SDK Developer</p>
-          <p class="mb-0"><a href="https://cyber-z.co.jp/" target="_blank" class="text-decoration-none"><u>https://cyber-z.co.jp/</u></a></p>
-        </div>
-        <div class="p-4 col-md-6 col-12 col-sm-12 col-lg-4">
-          <h4><b>ixit</b></h4>
-          <p class="mb-0">Project Manager</p>
-          <p class="mb-0"><a href="https://www.ixit.co.jp/"><u>https://www.ixit.co.jp/</u></a></p>
-        </div>
-        <div class="p-4 col-md-6 col-12 col-sm-12 col-lg-4">
-          <h4><b>viviane</b></h4>
-          <p class="mb-0" contenteditable="true">Product Owner</p>
-          <p class="mb-0"><a href="https://viviane.jp/" target="_blank" class="text-decoration-none"><u>https://viviane.jp/</u></a></p>
-        </div>
-        <div class="p-4 col-md-6 col-12 col-sm-12 col-lg-4">
-          <h4 contenteditable="true"><b>CLUE.inc</b></h4>
-          <p class="mb-0">iOS Developer</p>
-          <p class="mb-0"><a href="https://corp.t-clue.com/" target="_blank" class="text-decoration-none"><u>https://corp.t-clue.com/</u></a></p>
-        </div>
-        <div class="p-4 col-md-6 col-12 col-sm-12 col-lg-4">
-          <h4><b>Osidori.inc</b></h4>
-          <p class="mb-0">iOS Developer /&nbsp;UX Designer</p>
-          <p class="mb-0"><a href="https://www.osidori.co/" target="_blank" class="text-decoration-none"><u>https://www.osidori.co/</u></a></p>
-        </div>
-        <div class="p-4 col-md-6 col-12 col-sm-12 col-lg-4">
-          <h4><b>BizReach</b></h4>
-          <p class="mb-0">Product Manager</p>
-          <p class="mb-0"><a href="https://www.bizreach.co.jp/" target="_blank" class="text-decoration-none"><u>https://www.bizreach.co.jp/</u></a></p>
-        </div>
-        <div class="p-4 col-md-6 col-12 col-sm-12 col-lg-4">
-          <h4><b>Xross</b></h4>
-          <p class="mb-0">Senior Consultant</p>
-          <p class="mb-0"><a href="https://www.xross-value.com/" target="_blank" class="text-decoration-none"><u>https://www.xross-value.com/</u></a></p>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="py-5 mb-5 mt-5">
-    <div class="container">
-      <div class="row"></div>
-    </div>
-  </div>
-  <div class="text-center align-items-center section-fade-in-out shadowed h-25 d-flex" style="	background-image: url(&quot;assets/edit/demo1.png&quot;);	background-size: 100%;	background-position: center;	background-repeat: repeat;">
-    <div class="container py-5">
-      <div class="row">
-        <div class="col-md-8 mx-auto">
-          <h3 class="display-4">Technical Skills</h3>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="" id="Technical Skills">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12">
-          <h1 class="mt-5 mb-3">Management Skills&nbsp;</h1>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-md-12">
-          <table class="table text-center">
-            <thead>
-              <tr></tr>
-              <tr>
-                <td>&nbsp;</td>
-                <td></td>
-                <td>&nbsp;Term</td>
-                <td>Comprehension</td>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td contenteditable="true">Senior Consultant</td>
-                <td></td>
-                <td>1year</td>
-                <td>
-                  <div class="progress">
-                    <div class="progress-bar progress-bar-striped" role="progressbar" style="width:70%">70%</div>
-                  </div>
-                </td>
-              </tr>
-              <tr>
-                <td>Product Owner</td>
-                <td></td>
-                <td>1.6year</td>
-                <td class="">
-                  <div class="progress">
-                    <div class="progress-bar progress-bar-striped" role="progressbar" style="width:70%">70%</div>
-                  </div>
-                </td>
-              </tr>
-              <tr>
-                <td>Product Manager</td>
-                <td></td>
-                <td>3year</td>
-                <td>
-                  <div class="progress">
-                    <div class="progress-bar progress-bar-striped" role="progressbar" style="width:95%">95%</div>
-                  </div>
-                </td>
-              </tr>
-              <tr>
-                <td>Project Manager</td>
-                <td></td>
-                <td>1year</td>
-                <td>
-                  <div class="progress">
-                    <div class="progress-bar progress-bar-striped" role="progressbar" style="width:50%">50%</div>
-                  </div>
-                </td>
-              </tr>
-              <tr>
-                <td>Tech Lead</td>
-                <td></td>
-                <td>9month</td>
-                <td>
-                  <div class="progress">
-                    <div class="progress-bar progress-bar-striped" role="progressbar" style="width:60%">60%</div>
-                  </div>
-                </td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="pb-5">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12">
-          <h1 class="mt-5 mb-3">Programming Skills&nbsp;</h1>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-md-12">
-          <table class="table text-center">
-            <thead>
-              <tr></tr>
-              <tr>
-                <td>&nbsp;</td>
-                <td></td>
-                <td>&nbsp;Term</td>
-                <td>Comprehension</td>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>Objective-C</td>
-                <td></td>
-                <td>8year</td>
-                <td class="">
-                  <div class="progress">
-                    <div class="progress-bar progress-bar-striped" role="progressbar" style="width:99%">99%</div>
-                  </div>
-                </td>
-              </tr>
-              <tr>
-                <td>Swift</td>
-                <td></td>
-                <td>5year</td>
-                <td>
-                  <div class="progress">
-                    <div class="progress-bar progress-bar-striped" role="progressbar" style="width:99%">99%</div>
-                  </div>
-                </td>
-              </tr>
-              <tr>
-                <td>Ruby</td>
-                <td></td>
-                <td>1year</td>
-                <td>
-                  <div class="progress">
-                    <div class="progress-bar progress-bar-striped" role="progressbar" style="width:35%">35%</div>
-                  </div>
-                </td>
-              </tr>
-              <tr>
-                <td>Go</td>
-                <td></td>
-                <td>6month</td>
-                <td>
-                  <div class="progress">
-                    <div class="progress-bar progress-bar-striped" role="progressbar" style="width:40%">40%</div>
-                  </div>
-                </td>
-              </tr>
-              <tr>
-                <td>Java</td>
-                <td></td>
-                <td>1year</td>
-                <td>
-                  <div class="progress">
-                    <div class="progress-bar progress-bar-striped" role="progressbar" style="width:55%">55%</div>
-                  </div>
-                </td>
-              </tr>
-              <tr>
-                <td>Python</td>
-                <td></td>
-                <td>6month</td>
-                <td>
-                  <div class="progress">
-                    <div class="progress-bar progress-bar-striped" role="progressbar" style="width:30%">30%</div>
-                  </div>
-                </td>
-              </tr>
-              <tr>
-                <td>Kotlin</td>
-                <td></td>
-                <td>6month</td>
-                <td>
-                  <div class="progress">
-                    <div class="progress-bar progress-bar-striped" role="progressbar" style="width:70%">70%</div>
-                  </div>
-                </td>
-              </tr>
-              <tr>
-                <td>React</td>
-                <td></td>
-                <td>9month</td>
-                <td>
-                  <div class="progress">
-                    <div class="progress-bar progress-bar-striped" role="progressbar" style="width:70%">60%</div>
-                  </div>
-                </td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12">
-          <h1 class="mb-3">UI/UX Designer&nbsp; Skills&nbsp;</h1>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-md-12">
-          <table class="table text-center">
-            <thead>
-              <tr></tr>
-              <tr>
-                <td>&nbsp;</td>
-                <td></td>
-                <td>Term</td>
-                <td>Comprehension</td>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>Sketch</td>
-                <td></td>
-                <td>&nbsp;8year</td>
-                <td class="">
-                  <div class="progress">
-                    <div class="progress-bar progress-bar-striped" role="progressbar" style="width:99%">99%</div>
-                  </div>
-                </td>
-              </tr>
-              <tr>
-                <td>Figma</td>
-                <td></td>
-                <td>3year</td>
-                <td>
-                  <div class="progress">
-                    <div class="progress-bar progress-bar-striped" role="progressbar" style="width:80%">80%</div>
-                  </div>
-                </td>
-              </tr>
-              <tr>
-                <td>Adobe XD</td>
-                <td></td>
-                <td>12month</td>
-                <td>
-                  <div class="progress">
-                    <div class="progress-bar progress-bar-striped" role="progressbar" style="width:70%">70%</div>
-                  </div>
-                </td>
-              </tr>
-              <tr>
-                <td>Photoshop</td>
-                <td></td>
-                <td>&nbsp;2year</td>
-                <td>
-                  <div class="progress">
-                    <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 50%">50%</div>
-                  </div>
-                </td>
-              </tr>
-              <tr>
-                <td>Affinty Designer</td>
-                <td></td>
-                <td>&nbsp;1year</td>
-                <td>
-                  <div class="progress">
-                    <div class="progress-bar progress-bar-striped" role="progressbar" style="width:70%">70%</div>
-                  </div>
-                </td>
-              </tr>
-              <tr>
-                <td>Pixelmator</td>
-                <td></td>
-                <td>&nbsp;7year</td>
-                <td>
-                  <div class="progress">
-                    <div class="progress-bar progress-bar-striped" role="progressbar" style="width:95%">95%</div>
-                  </div>
-                </td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="pt-5 pb-5">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12">
-          <h1 class="mb-3">Marketing Tool&nbsp; &nbsp;Skills&nbsp;</h1>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-md-12 mb-3">
-          <table class="table text-center">
-            <thead>
-              <tr></tr>
-              <tr>
-                <td>&nbsp;</td>
-                <td></td>
-                <td>Term</td>
-                <td>Comprehension</td>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>Google Analytics</td>
-                <td></td>
-                <td>&nbsp;8year</td>
-                <td class="">
-                  <div class="progress">
-                    <div class="progress-bar progress-bar-striped" role="progressbar" style="width:95%">95%</div>
-                  </div>
-                </td>
-              </tr>
-              <tr>
-                <td>Tableau</td>
-                <td></td>
-                <td>&nbsp;1year</td>
-                <td>
-                  <div class="progress">
-                    <div class="progress-bar progress-bar-striped" role="progressbar" style="width:35%">35%</div>
-                  </div>
-                </td>
-              </tr>
-              <tr>
-                <td>Mixpanel</td>
-                <td></td>
-                <td>&nbsp;2year</td>
-                <td>
-                  <div class="progress">
-                    <div class="progress-bar progress-bar-striped" role="progressbar" style="width:70%">70%</div>
-                  </div>
-                </td>
-              </tr>
-              <tr>
-                <td>Firebase</td>
-                <td></td>
-                <td>&nbsp;3year</td>
-                <td>
-                  <div class="progress">
-                    <div class="progress-bar progress-bar-striped" role="progressbar" style="width:99%">99%</div>
-                  </div>
-                </td>
-              </tr>
-              <tr>
-                <td>Adjust</td>
-                <td></td>
-                <td>&nbsp;2year</td>
-                <td>
-                  <div class="progress">
-                    <div class="progress-bar progress-bar-striped" role="progressbar" style="width:80%">80%</div>
-                  </div>
-                </td>
-              </tr>
-              <tr>
-                <td>BigQuery</td>
-                <td></td>
-                <td>&nbsp;9month</td>
-                <td>
-                  <div class="progress">
-                    <div class="progress-bar progress-bar-striped" role="progressbar" style="width:45%">45%</div>
-                  </div>
-                </td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12">
-          <h1 class="mb-3">Growth Hack&nbsp; &nbsp;Skills&nbsp;</h1>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="">
-    <div class="container-fluid">
-      <div class="row">
-        <div class="p-0 col-12"> <img class="img-fluid d-block mt-4" src="assets/edit/Log123.png"> </div>
-      </div>
-    </div>
-  </div>
-  <div class="py-5 mb-5 mt-5">
-    <div class="container">
-      <div class="row"></div>
-    </div>
-  </div>
-  <div class="text-center mt-5 pt-5" id="OpenSourceInitiative">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12 text-center">
-          <h1>Open Source Initiative</h1>
-        </div>
-      </div>
-      <div class="row justify-content-center">
-        <div class="p-4 col-12 col-sm-12 col-lg-4 col-md-6"> <i class="d-block fa mb-2 text-muted fa-github fa-3x"></i>
-          <h4 class="mt-1"><a href="https://github.com/Objective-C-MM/MMBlurDialogView" target="_blank"><b>MMBlurDialogView</b></a></h4>
-          <p><a href="https://github.com/Objective-C-MM/MMBlurDialogView" target="_blank"> Super simple. Just drag &amp; drop MMBlurDialogView.h/.m into your project. QuartzCore.framework Accelerate.framework</a></p>
-        </div>
-        <div class="p-4 col-12 col-sm-12 col-lg-4 col-md-6"> <i class="d-block fa mb-2 text-muted fa-github fa-3x"></i>
-          <h4 class="mt-1"><a href="https://github.com/Objective-C-MM/MMSwitch" target="_blank"><b>MMSwitch</b></a></h4>
-          <p class="break"><a href="https://github.com/Objective-C-MM/MMSwitch" target="_blank"> Super simple. Just drag &amp; drop MMSwitch.h/.m into your project. QuartzCore.framework</a></p>
-        </div>
-        <div class="p-4 col-12 col-sm-12 col-lg-4 col-md-6"> <i class="d-block fa mb-2 text-muted fa-github fa-3x"></i>
-          <h4 class="mt-1"><a href="https://github.com/Mizogaki/MMSNControllers" target="_blank"><b>MMSNControllers</b></a></h4>
-          <p><a href="https://github.com/Mizogaki/MMSNControllers" target="_blank"> Swipe and Button transition menu. Super simple. Just drag &amp; drop MMSNControllers.h/.m into your project </a></p>
-        </div>
-        <div class="p-4 col-12 col-sm-12 col-lg-4 col-md-6"> <i class="d-block fa fa-3x mb-2 text-muted fa-github"></i>
-          <h4 class="mt-1"><a href="https://github.com/forceoperationx/public-fox-ios-sdk" target="_blank"><b>FOX-iOS-SDK</b></a></h4>
-          <p><a href="https://github.com/forceoperationx/public-fox-ios-sdk" target="_blank"> Force Operation X (F.O.X) is.<br>&nbsp;You can measure the number of installations by ad inflow.</a></p>
-        </div>
-        <div class="p-4 col-12 col-sm-12 col-lg-4 col-md-6"> <i class="d-block fa fa-3x mb-2 text-muted fa-github"></i>
-          <h4 class="mt-1"><a href="https://github.com/Mizogaki/MotionGraph" target="_blank"><b>MotionGraph</b></a></h4>
-          <p><a href="https://github.com/Mizogaki/MotionGraph" target="_blank"> iPhone Motion Graph. You can test the iPhone of the gyro sensor. iOS8 correspondence.&nbsp;</a></p>
-        </div>
-        <div class="p-4 col-12 col-sm-12 col-lg-4 col-md-6"> <i class="d-block fa fa-3x mb-2 text-muted fa-github"></i>
-          <h4 class="mt-1"><a href="https://github.com/forceoperationx/fox-ios-sdk-sampleapp" target="_blank"><b>Engagement</b></a></h4>
-          <p><a href="https://github.com/forceoperationx/fox-ios-sdk-sampleapp" target="_blank"> We will utilize data feeds to distribute dynamic creative and recommend advertisements.&nbsp;</a></p>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="py-5 mb-5 mt-5">
-    <div class="container">
-      <div class="row"></div>
-    </div>
-  </div>
-  <div class="py-5 text-center align-items-center section-fade-in-out shadowed d-flex h-25" style="	background-image: url(&quot;assets/edit/jirettai_members-1.jpg&quot;);	background-size: 100%;	background-position: center;	background-repeat: 0;" id="News">
-    <div class="container py-5">
-      <div class="row">
-        <div class="col-md-8 mx-auto">
-          <h3 class="display-4">Past achievements </h3>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="py-5 mt-5">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12">
-          <div class="row">
-            <div class="col-lg-5 col-md-6 p-md-4 col-12"><a href="https://www.asahi.com/articles/photo/AS20151016000154.html?jumpUrl=http%253A%252F%252Fdigital.asahi.com%252Farticles%252Fphoto%252FAS20151016000154.html%253F_requesturl%253Darticles%252Fphoto%252FAS20151016000154.html" target="_blank"><img class="d-block section-fade-in-out m-5 mx-auto mt-5 py-2 img-fluid" src="assets/edit/myZfn3Sz92SXR9a1574016185_1574016268.jpg" width="1600"></a> </div>
-            <div class="col-md-6 offset-lg-1 d-flex flex-column justify-content-center py-4">
-              <h2 class="my-3 text-center"><a href="https://www.asahi.com/articles/photo/AS20151016000154.html?jumpUrl=http%253A%252F%252Fdigital.asahi.com%252Farticles%252Fphoto%252FAS20151016000154.html%253F_requesturl%253Darticles%252Fphoto%252FAS20151016000154.html" target="_blank">朝日新聞で紹介される</a></h2>
-              <p class="text-center"><a href="https://www.asahi.com/articles/photo/AS20151016000154.html?jumpUrl=http%253A%252F%252Fdigital.asahi.com%252Farticles%252Fphoto%252FAS20151016000154.html%253F_requesturl%253Darticles%252Fphoto%252FAS20151016000154.html" target="_blank">東京・表参道。カフェや雑貨店が立ち並ぶ一角に、一風変わったシェアハウスがある。スマートフォン向けアプリの開発者など入居者をＩＴ技術者らに限定した<br>「テックレジデンス表参道」だ。今年７月に入居した溝垣雅人さん（２９）はフリーランスのＩＴエンジニア。アプリ開発などの仕事を個人で請け負う仕事柄、人のつながりが生命線だ。「ＩＴの世界は日進月歩。自分にない技術や知識を持った人とも、<br>知り合えるのが魅力」と言う。</a></p>
-            </div>
+
+        <div class="row">
+          <div class="col-lg-4" data-aos="fade-right">
+            <img src="assets/img/profile-img3.jpg" class="img-fluid" alt="">
           </div>
-          <div class="row">
-            <div class="col-md-6 d-flex flex-column justify-content-center order-2 order-md-1 py-4">
-              <h2 class="my-3"><a href="https://persol-tech-s.co.jp/i-engineer/interesting/numadumari-2" target="_blank">掲載漫画で取材を受ける</a></h2>
-              <p class=""><a href="https://persol-tech-s.co.jp/i-engineer/interesting/numadumari-2" target="_blank">『インドでキャバクラ始めました（笑）』などで<br>お馴染みの沼津マリーさんの連載<br>『どうして大人になったときにエンジニアになろうと思ったんだろう？』<br>第２回が公開！&nbsp;<br>今回はメディアでも取り上げられて話題になった<br>エンジニアだけが住むという<br>シェアハウスのエンジニア２人組の取材を敢行。<br>あそこ、一体どんな人たちが住んでいるんだろう？</a></p>
+          <div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
+            <h3>Developer &amp; Consultant &amp; UX-UI Designer</h3>
+            <p class="fst-italic">
+              <small>Developer / TechLead / UX-UI / Designer / Director / ProjectManager / ProductManager / ProductOwner / SeniorConsultant<br> 様々なポジションでの経験実績があります</small>
+            </p>
+            <div class="row">
+              <div class="col-lg-6">
+                <ul>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Birthday:</strong> <span>5 April 1986</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Github:</strong> <span>https://github.com/Mizogaki</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Phone:</strong> <span>+81 080-4265-9971</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>City:</strong> <span>Tokyo Shibuya, Japan</span></li>
+                </ul>
+              </div>
+              <div class="col-lg-6">
+                <ul>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Age:</strong> <span>37</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Degree:</strong> <span>Predator</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Email:</strong> <span>m.mizogaki.job@gmail.com</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Freelance:</strong> <span>Available</span></li>
+                </ul>
+              </div>
             </div>
-            <div class="col-lg-5 col-md-6 p-md-4 offset-lg-1 order-1 order-md-2 col-12"> <a href="https://persol-tech-s.co.jp/i-engineer/interesting/numadumari-2" target="_blank"><img class="img-fluid d-block section-fade-in-out" width="1500" src="assets/edit/FQKqO17qQUfji1j1574017508_1574017527.png"></a></div>
-          </div>
-          <div class="row">
-            <div class="col-lg-5 col-md-6 p-md-4 col-12"> <a href="https://www.kigyoshimin.com/" target="_blank"><img class="img-fluid d-block m-5 mx-auto mt-5 py-2" src="assets/edit/EyoFpRUyRu40rnM1574018314_1574018322.jpg" width="1600"></a></div>
-            <div class="col-md-6 offset-lg-1 d-flex flex-column justify-content-center py-4">
-              <h2 class="my-3"><a href="https://www.kigyoshimin.com/" target="_blank">起業志民プロジェクトに講師として</a></h2>
-              <p class=""><a href="https://www.kigyoshimin.com/" target="_blank">このプロジェクトは、起業を志す全ての人を応援するため、岩手県八幡平市が立ち上げました。 地方創生が注目され、地方へのサテライトオフィス誘致や起業を促すといった施策も多数見受けられますが、本プロジェクトは市への立地誘導にとどまらず、起業をはじめとした自由な働き方ができる人が増えるよう支援することをミッションとしています。&nbsp; 今回は、いま世界で最も必要とされている、iPhoneのアプリをつくるためのプログラミング言語のSwift編です！</a></p>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-md-6 d-flex flex-column justify-content-center order-2 order-md-1 py-4">
-              <h2 class="my-3"><a href="https://www.j-platpat.inpit.go.jp/c1800/PU/JP-6312880/23EA4CD6C87283B5F7178BFD622EEC11411BE1D43BFB0EDC2945D2125CC92D11/15/ja" target="_blank">ソフトウェアー特許取得</a></h2>
-              <p class=""><a href="https://www.j-platpat.inpit.go.jp/c1800/PU/JP-6312880/23EA4CD6C87283B5F7178BFD622EEC11411BE1D43BFB0EDC2945D2125CC92D11/15/ja" target="_blank">分析装置、分析方法及び分析プログラム<br>分析対象であって、出力装置にデータを出力するアプリケーションプログラム及び当該 アプリケーションプログラムが更新された新たなアプリケーションプログラムを記憶する 第１記憶部と、 　前記第１記憶部に記憶されるアプリケーションプログラムを分析する分析プログラムを 記憶する第２記憶部と、 　前記第１記憶部にアプリケーションプログラムが記憶されるとともに、前記第２記憶部 に分析プログラムが記憶されると、 当 該 ア プ リ ケ ー シ ョ ン プ ロ グ ラ ム 中 で 前 記 分 析 プ ロ グ ラ ム の 実 行 タ イ ミ ン グ を 規 定 し 、 当 該 ア プ リ ケ ー シ ョ ン プ ロ グ ラ ム の 実 行 中 に 前 記 実 行 タ イ ミ ン グ が 到 来 す る と 前 記 分 析 プ ロ グ ラ ム を 実 行 し て 、 当該アプリケーションプログラム のテストを実行するテスト実行部と、 　前記テスト実行部によりアプリケーションプログラムのテストが開始すると、分析プロ グラムで規定されるタイミングで前記出力装置に出力する</a></p>
-            </div>
-            <div class="col-lg-5 col-md-6 p-md-4 offset-lg-1 order-1 order-md-2 col-12"> <a href="https://www.mizogaki-portfolio.com/assets/edit/JPA201812880.pdf" target="_blank"><img class="img-fluid d-block section-fade-in-out" width="1500" src="assets/edit/I9xFUCKAin88KUW1574063400_1574063404.png"></a></div>
+            <p><small>
+              IT業界のシステムを中心にエンジニアとして経験積み テックリードやプロジェクトマネージメントを経験する プロダクトオーナーとしての経験実績も数多くあります
+              従事した案件では 企画・提案から顧客折衝・機器選定・要件定義・設計・構築・人材採用・障害対応まで 上流から下流工程まで見ることが可能
+              エンジニアとしては成熟しており プログラミング講師やSDKモジュール開発 OpenSouceへのコミット実績があります 近年ではITコンサルタントとして活躍
+              またデザイナーとしては受託実績が多く UX-UIから紙媒体まで対応可能です デザインチームの構築や指導 採用に至るまで一通りの経験があります
+              フォトグラファーとしての実績もあり 被写体から物撮りまで対応可能です
+            </small></p>
           </div>
         </div>
       </div>
-    </div>
-  </div>
-  <div class="py-5 text-center text-white" style="position: relative; overflow: hidden;"> <video autoplay="" loop="" muted="" plays-inline="" style="position: absolute; right: 0; top: 0; min-width:100%; z-index: -100;">
-      <source src="https://youtu.be/BSXV1axhzhQ" type="video/mp4"> </video>
-  </div>
-  <div class="mb-5 py-5"></div>
-  <div class="mt-5" id="Jirettai">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12 col-lg-12"><img class="img-fluid d-block mx-auto" src="assets/edit/Artboard@2x.png">
-          <p class=""><b><span class="">JIRETTAI は尖った クリエイターたちの実験場</span></b><br><br><b>&nbsp; &nbsp;常識を疑い誰もが 当たり前だと思っている物事に</b><br><b>一味違う視点を持ち込む</b><br><br><b>&nbsp; &nbsp;今までの型を壊し自分たちの手で</b><br><b>&nbsp;新しい型を作りそしてそれさえも壊し続ける</b><br><br><b>&nbsp; &nbsp;そんな「じれったさ」と 向き合い続ける情熱が未来を創る<br>&nbsp; &nbsp;未来は俺たちの発明から始まる</b></p>
+    </section><!-- End About Section -->
+
+    <!-- ======= Facts Section ======= -->
+    <section id="facts" class="facts">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Github Status</h2>
+          <p>View the record and activity results from 2015 to 2023 in Github here.
+            Does not include private projects and issues.
+            I haven't been able to commit much to Github recently because I have a lot of management work.</p>
+        </div>
+
+        <div class="row no-gutters">
+
+          <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch" data-aos="fade-up">
+            <div class="count-box">
+              <i class="bi bi-star"></i>
+              <span data-purecounter-start="0" data-purecounter-end="46" data-purecounter-duration="1" class="purecounter"></span>
+              <p><strong>Total Stars</strong></p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch" data-aos="fade-up" data-aos-delay="100">
+            <div class="count-box">
+              <i class="bi bi-code-slash"></i>
+              <span data-purecounter-start="0" data-purecounter-end="2689" data-purecounter-duration="1" class="purecounter"></span>
+              <p><strong>Total Commits</strong></p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch" data-aos="fade-up" data-aos-delay="200">
+            <div class="count-box">
+              <i class="bi bi-journal-richtext"></i>
+              <span data-purecounter-start="0" data-purecounter-end="3890" data-purecounter-duration="1" class="purecounter"></span>
+              <p><strong>Total Issue</strong></p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch" data-aos="fade-up" data-aos-delay="300">
+            <div class="count-box">
+              <i class="bi bi-people"></i>
+              <span data-purecounter-start="0" data-purecounter-end="24" data-purecounter-duration="1" class="purecounter"></span>
+              <p><strong>Followers</strong></p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Facts Section -->
+
+    <!-- ======= Position Section ======= -->
+    <section id="skills" class="skills section-bg">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Positions</h2>
+          <p>Experienced various positions and keenly realized the difficulty of management.
+            However, as I have accumulated more achievements, I think I have gotten a little closer to becoming a leader who is loved by everyone.
+            Now I'm learning magic to revitalize the team.</p>
+        </div>
+
+        <div class="row skills-content">
+
+          <div class="col-lg-6" data-aos="fade-up">
+
+            <div class="progress">
+              <span class="skill">Senior Consultant <i class="val">80%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill">Product Owner <i class="val">90%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill">Product Manager <i class="val">95%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+
+            <div class="progress">
+              <span class="skill">Project Manager <i class="val">80%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill">UX-UI Designer <i class="val">90%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill">Tech Lead <i class="val">55%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Position Section -->
+
+    <!-- ======= Programming Skills Section ======= -->
+    <section id="skills" class="skills section-bg">
+      <div class="container">
+
+        <div class="section-title">
+          <h2> Programming Skills</h2>
+          <p>I learned programming by self and accumulated achievements with the momentum of flying in the sky.  
+             I'm not a full-stack engineer, but I'm familiar with just about every technology.</p>
+        </div>
+
+        <div class="row skills-content">
+          <div class="col-lg-6" data-aos="fade-up">
+
+            <div class="progress">
+              <span class="skill">HTML <i class="val">60%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill">CSS <i class="val">50%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill">JavaScript <i class="val">45%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill">Ruby <i class="val">50%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill">Go <i class="val">40%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill">Objective-C <i class="val">95%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6" data-aos="fade-up">
+
+            <div class="progress">
+              <span class="skill">Java <i class="val">60%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill">Python <i class="val">40%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill">Kotlin <i class="val">65%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+           <div class="progress">
+            <span class="skill">Swift <i class="val">90%</i></span>
+            <div class="progress-bar-wrap">
+              <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+           </div>
+
+           <div class="progress">
+            <span class="skill">Php <i class="val">40%</i></span>
+            <div class="progress-bar-wrap">
+              <div class="progress-bar" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+           </div>
+
+           <div class="progress">
+            <span class="skill">C# <i class="val">35%</i></span>
+            <div class="progress-bar-wrap">
+              <div class="progress-bar" role="progressbar" aria-valuenow="35" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+           </div>
         </div>
       </div>
-    </div>
-  </div>
-  <div class="text-center mb-5 pb-3">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-4 p-3">
-          <div class="card">
-            <div class="card-body bg-info p-0"> <img class="d-block mx-auto mb-3 img-fluid w-100" src="assets/edit/Migogaki_bw.jpg" width="210" height="160">
+    </section><!-- End Programming Skills Section -->
+
+    <!-- ======= Design Tool Skills Section ======= -->
+    <section id="skills" class="skills section-bg">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Design Tool Skills</h2>
+          <p>
+             I use a wide variety of tools, but I can use one set of design tools.
+             Basically, I design UI by identifying issues and applying them to UX.
+             I have a proven track record as a photographer.
+          </p>
+        </div>
+
+        <div class="row skills-content">
+
+          <div class="col-lg-6" data-aos="fade-up">
+
+            <div class="progress">
+              <span class="skill">Sketch <i class="val">80%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill">Figma <i class="val">70%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill">Adobe XD <i class="val">45%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+
+            <div class="progress">
+              <span class="skill">Photoshop <i class="val">30%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill">Affinty Designer <i class="val">60%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill">Pixelmator <i class="val">85%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Design Tool Skills Section -->
+
+    <!-- ======= Analytics Tool Skills Section ======= -->
+    <section id="skills" class="skills section-bg">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Analytics Tool Skills</h2>
+          <p>I have been analyzing with various tools to grow the product. 
+            I analyzed user behavior logs within the product and proceeded while determining impact and prioritization. 
+            I can't write complicated SQL, but it is possible to some extent.</p>
+        </div>
+
+        <div class="row skills-content">
+
+          <div class="col-lg-6" data-aos="fade-up">
+
+            <div class="progress">
+              <span class="skill">Google Analytics <i class="val">80%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill">Tableau <i class="val">70%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill">Mixpanel <i class="val">45%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+
+            <div class="progress">
+              <span class="skill">Firebase <i class="val">90%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill">BigQuery <i class="val">60%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill">Adjust <i class="val">65%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Analytics Tool Skills Section -->
+
+    <!-- ======= Resume Section ======= -->
+    <section id="resume" class="resume">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Resume</h2>
+          <p>Started working as a programmer in 2010. 
+            I started my business in 2017 and launched Jirettai.inc. 
+            I am currently supporting companies as an IT consultant. 
+          </p>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-6" data-aos="fade-up">
+
+            <!-- ======= Sumary ======= -->
+            <h3 class="resume-title">Sumary</h3>
+            <div class="resume-item pb-0">
               <h4>Masahito Mizogaki</h4>
-              <h6>CEO / Founder /&nbsp;Engineer&nbsp;</h6>
+              <p>
+                <em>
+                  <small>事業戦略沿って課題設定し プロダクトへ落とし込む事を得意し 企業から評価受ける</small>
+                  <small>サービスをグロースさせるための施策の立案し 実行させる事にやりがいを感じる</small>
+                  <small>アクセス解析を用いたプロダクト分析も得意であり 課題の抽出させKPIの設定し UX改善/再設計の実績を数多く持つ</small>
+                  <small>プロジェクトマネージメント業務も一通りこなせる</small>
+                </em>
+              </p>
+              <ul>
+                <li>Tokyo Shibuya, Japan</li>
+                <li>(+81) 080-4265-9971</li>
+                <li>m.mizogaki.job@gmail.com</li>
+              </ul>
+            </div><!-- ======= Sumary End ======= -->
+
+            <!-- ======= Education ======= -->
+            <h3 class="resume-title">Education</h3>
+            <div class="resume-item">
+              <h4>東亜大学 総合人間学科</h4>
+              <h5>2005 - 2009</h5>
+              <p><em>なぜ人は生きるのか？人生の問いを探し求める</em></p>
+              <p>
+                <small>臨床心理を専攻しつつ哲学的な思想にのめり込む</small>
+                <small>研究テーマを 死生学にフォーカスしながら生きがいとは何か？</small>
+                <small>哲学的なアプローチと臨床心理的な側面から考察する</small>
+                <small>４年間で人生の指針を見つける</small>
+              </p>
             </div>
+
+            <div class="resume-item">
+              <h4>グロービス経営大学院大学 MBAプログラム</h4>
+              <h5>2019 - 2020</h5>
+              <p><em>仕事との両立が難しく断念</em></p>
+              <p>
+                <small>経営に関する体系的な知識を学ぶ またコンサルタントなどの専門分野での知見を深めた</small>
+                <small>ビジネスの現場で最も求められる様々な分野でのアプローチを学ぶ</small>
+              </p>
+            </div><!-- ======= Education End ======= -->
+
+            <!-- ======= Designer Professional Experience ======= -->
+            <h3 class="resume-title">Designer Professional Experience</h3>
+            <div class="resume-item">
+              <h4>UX-UI Designer </h4>
+              <h5>2015 - 2020</h5>
+              <p><em>既存改修 トヨタメディアサービス 営業支援アプリ開発</em></p>
+              <ul>
+                <li><small>他部署と連携しながら プロダクトの課題感を調査 </small></li>
+                <li><small>ヒアリングを行いながら結果を分析し UX設計を提案 </small></li>
+                <li><small>設計したUXをUIに落とし込み納品 </small></li>
+              </ul>
+              <h5>2018 - 2019</h5>
+              <p><em>新規開発 夫婦会計管理アプリ オシドリ</em></p>
+              <ul>
+                <li><small>画面ワイヤーを作成</small></li>
+                <li><small>UI改善を提案 修正して納品</small></li>
+              </ul>
+              <h5>2019 - 2020</h5>
+              <p><em>新規案件 コンサルファーム ユニチャーム</em></p>
+              <ul>
+                <li><small>プロダクト戦略沿って 最適なサービスを設計</small></li>
+                <li><small>競合プロダクトを分析しながら コア機能を設計</small></li>
+                <li><small>リファラルでデザインチームを構築</small></li>
+                <li><small>UXを設計し UIに落とし込み納品</small></li>
+              </ul>
+            </div><!-- ======= Designer Professional Experience End ======= -->
+
+            <!-- ======= Photographer Professional Experience ======= -->
+            <h3 class="resume-title">Photographer Professional Experience</h3>
+            <div class="resume-item">
+              <h4>Photographer </h4>
+              <h5>2021 - Present</h5>
+              <p><em>主に飲食業界を中心に活躍</em></p>
+              <ul>
+                <li><small>モデルの撮影納品</small></li>
+                <li><small>商品の撮影納品</small></li>
+                <li><small>飲食店のメニューからロゴ作成</small></li>
+              </ul>
+            </div><!-- ======= Photographer Professional Experience End ======= -->
+
+            <!-- ======= Developer Professional Experience ======= -->
+            <h3 class="resume-title">Developer Professional Experience</h3>
+
+            <div class="resume-item">
+              <h4>iOS Developer</h4>
+              <h5>2010 - 2013</h5>
+              <p><em>既存改修 営業支援アプリ開発 - トヨタメディアサービス</em></p>
+              <ul>
+                <li><small>要件定義/基本設計/詳細設計/開発/単体テスト/結合テストを担当</small></li>
+                <li><small>新規モジュール開発 画面プログラム開発</small></li>
+              </ul>
+              <p><em>新規開発 営業支援アプリ開発 - 三菱</em></p>
+              <ul>
+                <li><small>要件定義/基本設計/詳細設計/開発/単体テスト/結合テストを担当</small></li>
+                <li><small>外国籍のメンバーと開発するなど 大きな開発を任される</small></li>
+              </ul>
+            </div>
+
+            <div class="resume-item">
+              <h4>iOS Developer</h4>
+              <h5>2013 - 2014</h5>
+              <p><em>新規受託開発 Facebook婚活アプリ - TeamLab</em></p>
+              <ul>
+                <li><small>要件定義/基本設計/詳細設計/開発/単体テスト/結合テストを担当</small></li>
+                <p>
+                  <small>
+                    クライアント側の調整が終わっていなかった事と 私自身Cocoapodでの開発が
+                    初めてだったため最初の4ヶ月は サンプルプログラムから作成する期間となりました
+                    実質7ヶ月間で 要件定義から納品まで行う スピード開発となった
+                  </small>
+                </p>
+                <li>
+                  <small>
+                    現場は殺伐としており苦しい戦いの為 ほとんど寝れない状態でしたが なんとか喰らいつきながら生産性を維持しました
+                    過酷な経験を乗り越え納品できてよかったです 人として強くなれた事に感謝しています
+                  </small>
+                </li>
+                <li>
+                  <small>
+                    今回の経験から多くの事を学びました まず人には限界があり見極める必要がある
+                    また実現可能性を考慮してプロジェクトを進めるべきであり 調査や見積もりが甘いと悲しい結果しかない
+                  </small>
+                </li>
+              </ul>
+            </div>
+
+            <div class="resume-item">
+              <h4>iOS Developer  &amp; Director</h4>
+              <h5>2014 - 2015</h5>
+              <p><em>既存改修 リクナビNEXTアプリ企画/開発 - リクルート</em></p>
+              <ul>
+                <li><small>要件定義/基本設計/詳細設計/開発/単体テスト/結合テストを担当</small></li>
+                <p>
+                  <small>
+                    業務委託と社員の境目がなく 責任を持って業務遂行できました<br>
+                    PDCAサイクルを 2週間スプリントで回しました
+                    クオーターの終わりに 目標を達成できて感無量でした
+                  </small>
+                </p>
+                <p>
+                  <small>
+                    この12ヶ月は濃厚な一年で 色々とチャレンジをさせて頂きました<br>
+                    部署のTop人がユニークな方で プロダクトの企画フェイズから色々と学ぶ事が多く<br>
+                    チームの勉強会などにも 参加させて頂いき感謝しています
+                    現在でもメンバーとつながりがあり 仕事や相談などさせて頂いております
+                  </small>
+                </p>
+              </ul>
+            </div>
+
+            <div class="resume-item">
+              <h4>Technical Lead Engineer</h4>
+              <h5>2015 - 2016</h5>
+              <p><em>新規開発 イベントチケット管理アプリ - DMM.com</em></p>
+              <ul>
+                <li><small>要件定義/基本設計/詳細設計/開発/単体テスト/結合テストを担当</small></li>
+                <p>
+                  <small>
+                    当初は実現可能性が低いプロジェクトでしたが<br>
+                    要件とスケジュール調整を 各部署と連携する事で進める事ができました
+                  </small>
+                </p>
+              </ul>
+            </div><!-- ======= Developer Professional Experience End ======= -->
+          </div><!-- ======= Left End ======= -->
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+
+            <!-- ======= Management Professional Experience ======= -->
+            <h3 class="resume-title">Management Professional Experience</h3>
+            <div class="resume-item">
+              <h4>Project Manager</h4>
+              <h5>2016 - 2017</h5>
+              <p><em>新規開発受注案件 動画再生SDK開発 - ixit </em></p>
+              <ul>
+                <li><small>要件定義/基本設計/詳細設計/スケジュール管理/進捗管理/チーム構築/エンジニア採用を担当</small></li>
+                <p>
+                  <small>
+                    この開発会社で様々な案件を受託開発していたが
+                    この案件からプロジェクトマネージャーとしてジョイン 早急に引き継ぎを済ませ
+                    Prottに起こしてお客様と要件をする合わせを3ヶ月行い エンジニアとデザイナーの採用してチームを作りました
+                  </small>
+                </p>
+              </ul>
+            </div>
+
+            <div class="resume-item">
+              <h4>Product Owner</h4>
+              <h5>2016 - 2017</h5>
+              <p><em>既存改修 映画メディアアプリ - vivian </em></p>
+              <ul>
+                <li><small>要件定義/基本設計/詳細設計/スケジュール管理/進捗管理/チーム構築/エンジニア採用を担当</small></li>
+                <p>
+                  <small>
+                    友人エンジニアから 紹介していただいた関係で 最初はプログラマーとしてJoinしました
+                  </small>
+                </p>
+                <p>
+                  <small>
+                    私自身が映画が好きな事と人材不足もあり<br>
+                    プロダクトオーナーとして 途中から常駐する事になりました
+                  </small>
+                </p>
+                <p>
+                  <small>
+                    エンジニアほぼ全員がフルタイムではない働きだったこと 学生さんも多くチーム開発のノウハウやツールに慣れていない
+                    チームでしたので スケジュールの調整やタスクの割り振り 情報共有・開発体制・フロー構築 運用自体に苦労しました
+                  </small>
+                </p>
+                <p>
+                  <small>
+                    またスタートアップとして フルコミットでないメンバーで回す必要があるため
+                    わかりやすく分離しやすい設計と 柔軟な開発体制とコンテンツ政策を保つこと メンバーのスキル向上を意識しました
+                  </small>
+                </p>
+              </ul>
+            </div>
+
+            <div class="resume-item">
+              <h4>Product Manager</h4>
+              <h5>2018 - 2019</h5>
+              <p><em>既存改修 Bizreachアプリ企画 - Bizreach</em></p>
+              <ul>
+                <li><small>企画/要件定義</small></li>
+                <p>
+                  <small>
+                    リクルート時代にBizreachのCTO方と面識あり その事がきっかけでJoinする事になりました<br>
+                    プロダクト自体はかなりレガシーでありながら<br>
+                    いくつもの問題を抱えており 特に私がスマートフォンに知見が強かった為
+                    プロダクトのエンゲージメントを中心に企画を担当させて頂きました
+                  </small>
+                </p>
+                <p>
+                  <small>
+                    業務委託と社員の境目がなく責任を持って業務遂行できました
+                    初めてのプロジェクト全体スケジュール管理を行いました
+                  </small>
+                </p>
+                <p>
+                  <small>
+                    社風としてなのか？部署間の隔たりもなく チーム全員が仲良くしており 仕事を進めやすかった印象があります
+                    PDCAサイクルを2週間スプリントで回しました クオーターの終わりに目標を達成できて感無量でした
+                  </small>
+                </p>
+              </ul>
+            </div>
+
+            <div class="resume-item">
+              <h4>Project Manager</h4>
+              <h5>2020 - 2021</h5>
+              <p><em>既存改修 au Smart Pass - mediba </em></p>
+              <ul>
+                <li><small>要件定義/基本設計/詳細設計/スケジュール管理/進捗管理/チーム構築/エンジニア採用を担当</small></li>
+                <p>
+                  <small>
+                    関係各所が非常に多く また調整業務が今までより多いこともあり<br>
+                    最初戸惑いが多かったですが 問題なく働く事ができました
+                  </small>
+                </p>
+                <p>
+                  <small>
+                    また私がジョインしてから 社内にGHチームを立ち上げました<br>
+                    戸惑いが多かった要因ですが au Smart Pass自体がauの傘下のそれぞれの別の子会社に
+                    紐づいたメディアプロダクトという特性があり 成果がカニバル可能性が高く調整が難航した事が要因です
+                  </small>
+                </p>
+                <p>
+                  <small>
+                    まだ開発ベンダー含め 多くの問題がありPDCAサイクルは遅いですが 施策を回しつつあります
+                    クオーターで3つの施策を回した実績はあります
+                  </small>
+                </p>
+              </ul>
+            </div>
+
+            <div class="resume-item">
+              <h4>Project Manager</h4>
+              <h5>2020 - 2021</h5>
+              <p><em>新規案件 複数案件の進捗管理 - エヌエル＋ </em></p>
+              <ul>
+                <li><small>要件定義/基本設計/スケジュール管理/進捗管理/チーム構築/エンジニア採用を担当</small></li>
+                <p>
+                  <small>
+                    リクルートにジョインした時の知人が この会社の役員に昇進したタイミングでジョインする事になりました
+                    目的としてはプロジェクトマネージャーが不足しており サブの２名の教育を任されました
+                  </small>
+                </p>
+                <p>
+                  <small>
+                    複数の案件を横断的に調整する事が多く 分刻みのスケジュールの中で<br>
+                    仕様変更が多いプロジェクトでしたが 無事にリリースを守ることができました<br>
+                    業務委託と社員の境目がなく 責任を持って業務遂行できました
+                  </small>
+                </p>
+                <p>
+                  <small>
+                    ほぼ全員がフルリモートで 且つフルタイムではない働きだったこと チーム開発のノウハウやツールに慣れていないチームでしたので
+                    スケジュールの調整やタスクの割り振り 情報共有 開発体制・フロー構築・運用自体に苦労しました
+                  </small>
+                </p>
+              </ul>
+            </div>
+
+            <div class="resume-item">
+              <h4>Project Manager</h4>
+              <h5>2021 - 2023</h5>
+              <p><em>既存改修 テックファーム - サプライズクルー </em></p>
+              <ul>
+                <li><small>要件定義/基本設計/スケジュール管理/進捗管理/チーム構築/エンジニア採用を担当</small></li>
+                <p>
+                  <small>
+                    月間のPV数 16億PVという大規模な風俗情報サービスの開発案件でした
+                    レガシーなサービスを デザインとUX含めRebootできるとの事に 興味関心を持ちJoinさせて頂きました
+                  </small>
+                </p>
+                <p>
+                  <small>
+                    案件自体はJoinする前の面談時に プロジェクトが炎上している旨を聞きしており 交通整理をまず開始しました
+                  </small>
+                </p>
+                <p>
+                  <small>
+                    予約チームにジョインしてからは 新規機能開発に向けてスケジュールの調整含めた
+                    要件定義から詳細設計までチーム構築とエンジニアの採用を進めました
+                  </small>
+                </p>
+              </ul>
+            </div><!-- ======= Management Professional Experience End ======= -->
+
+            <!-- ======= Consulting Professional Experience ======= -->
+            <h3 class="resume-title">Consulting Professional Experience</h3>
+            <div class="resume-item">
+              <h4>Senior Technical Consultant </h4>
+              <h5>2019 - 2020</h5>
+              <p><em>新規案件 コンサルファーム - ユニチャーム</em></p>
+              <ul>
+                <li><small>プロダクト戦略提案/企画/要件定義/工数管理/採用/デザインチーム作成&運営/ベンダー管理を担当</small></li>
+                <p>
+                  <small>
+                    初めてのコンサル業務でしたが 問題なく遂行できました<br>
+                    デザインチームの構築など業務委託と社員の境目がなく責任を持って業務遂行できました
+                    PDCAサイクルを2週間スプリントで回しました
+                  </small>
+                </p>
+              </ul>
+            </div>
+
+            <div class="resume-item">
+              <h4>Technical Consultant</h4>
+              <h5>2022 - 2022</h5>
+              <p><em>新規案件 コンサルファーム - NTTデーター </em></p>
+              <ul>
+                <li><small>企画/要件定義/基本設計を担当</small></li>
+                <p>
+                  <small>
+                    NTTデータが企画するスマートシティー構想を 具体化する為の企画と構想立案をする案件でした
+                    大枠の企画はNTTデータとすり合わせする事で調整が完了し
+                    ITコンサルタントの我々は 実現可能性を含め検討し 要件定義と基本設計をするフェイズを担当させて頂きました
+                  </small>
+                </p>
+                <p>
+                  <small>
+                    実現可能性の定義から 提案に至るまでの体裁含め資料化<br>
+                    最終的に企画構想資料とワイヤーを納品
+                  </small>
+                </p>
+              </ul>
+            </div><!-- ======= Consulting Professional Experience End ======= -->
+
+          </div><!-- ======= Right End ======= -->
+        </div>
+
+      </div>
+    </section><!-- End Resume Section -->
+
+    <!-- ======= Portfolio Section ======= -->
+    <section id="portfolio" class="portfolio section-bg">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Portfolio</h2>
+          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+        </div>
+
+        <!-- Portfolio Tab -->
+        <div class="row" data-aos="fade-up">
+          <div class="col-lg-12 d-flex justify-content-center">
+            <ul id="portfolio-flters">
+              <li data-filter="*" class="filter-active">All</li>
+              <li data-filter=".filter-product">Product</li>
+              <li data-filter=".filter-design">Design</li>
+              <li data-filter=".filter-web">Web</li>
+            </ul>
           </div>
         </div>
-        <div class="col-lg-4 p-3">
-          <div class="card">
-            <div class="card-body bg-info p-0"> <img class="d-block mb-3 mx-auto img-fluid w-100" width="210" height="160" src="assets/edit/david1014.jpg">
-              <h4>Souich Davit Nakahashi</h4>
-              <h6>COO / Engineer</h6>
+
+        <!-- Sum Portfolio Create design-->
+        <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="100">
+          <div class="col-lg-4 col-md-6 portfolio-item filter-design">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/Sum1.png" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                <a href="assets/img/portfolio/Sum1.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="2010年初めてポートフォリオサイト作成"><i class="bx bx-plus"></i></a>
+                <a href="portfolio-web.html" title="More Details"><i class="bx bx-link"></i></a>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="col-lg-4 p-3">
-          <div class="card">
-            <div class="card-body bg-info p-0"> <img class="d-block mb-3 mx-auto img-fluid w-100" src="assets/edit/obata_bw.jpg" width="210" height="160">
-              <h4>Kousuke Obata</h4>
-              <h6>CSO / Photographer / Engineer</h6>
+
+          <!-- Sum Asahi web-->
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/Sum2.png" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                <a href="assets/img/portfolio/Sum2.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="朝日新聞で記事になり紹介して頂く"><i class="bx bx-plus"></i></a>
+                <a href="https://www.asahi.com/articles/photo/AS20151016000154.html?jumpUrl=http%3A%2F%2Fdigital.asahi.com%2Farticles%2Fphoto%2FAS20151016000154.html%3F_requesturl%3Darticles%2Fphoto%2FAS20151016000154.html" title="More Details"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Sum TuguTugu web-->
+          <div class="col-lg-4 col-md-6 portfolio-item filter-product">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/Sum3.png" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                <a href="assets/img/portfolio/Sum3.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="2021年 CafeTuguTugu menu"><i class="bx bx-plus"></i></a>
+                <a href="portfolio-TuguTugu.html" title="More Details"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/portfolio-4.jpg" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                <a href="assets/img/portfolio/portfolio-4.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card 2"><i class="bx bx-plus"></i></a>
+                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/portfolio-5.jpg" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                <a href="assets/img/portfolio/portfolio-5.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 2"><i class="bx bx-plus"></i></a>
+                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-product">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/portfolio-6.jpg" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                <a href="assets/img/portfolio/portfolio-6.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 3"><i class="bx bx-plus"></i></a>
+                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-design">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/portfolio-7.jpg" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                <a href="assets/img/portfolio/portfolio-7.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card 1"><i class="bx bx-plus"></i></a>
+                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-design">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/portfolio-8.jpg" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                <a href="assets/img/portfolio/portfolio-8.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card 3"><i class="bx bx-plus"></i></a>
+                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/portfolio-9.jpg" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                <a href="assets/img/portfolio/portfolio-9.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 3"><i class="bx bx-plus"></i></a>
+                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+              </div>
             </div>
           </div>
         </div>
       </div>
-      <div class="row">
-        <div class="col-lg-4 p-3">
-          <div class="card">
-            <div class="card-body bg-info p-0"> <img class="d-block img-fluid mx-auto mb-3 w-100" src="assets/edit/yasushi.jpg" width="210" height="160">
-              <h4 contenteditable="true">Yasushi Ikeda</h4>
-              <h6 contenteditable="true">Engineer</h6>
-            </div>
+    </section><!-- End Portfolio Section -->
+
+    <!-- ======= Services Section ======= -->
+    <section id="services" class="services">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Services</h2>
+          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up">
+            <div class="icon"><i class="bi bi-cup-hot"></i></div>
+            <h4 class="title"><a href="">ProductOwner</a></h4>
+            <p class="description">プロダクトオーナーとしての実績は３年以上あります。全体を見通して前進させます。</p>
+          </div>
+          <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="100">
+            <div class="icon"><i class="bi bi-card-checklist"></i></div>
+            <h4 class="title"><a href="">ProjectManager</a></h4>
+            <p class="description">要件定義からスケジュール管理・エンジニア採用など一通り全ての業務に対応できます。</p>
+          </div>
+          <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="200">
+            <div class="icon"><i class="bi bi-bar-chart"></i></div>
+            <h4 class="title"><a href="">SeniorConsultant</a></h4>
+            <p class="description">ITコンサルの経験3年以上あります。顧客折衝から要件定義まで対応可能です。ITPMOの実績もあります。</p>
+          </div>
+          <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="300">
+            <div class="icon"><i class="bi bi-code-slash"></i></div>
+            <h4 class="title"><a href="">Engineer</a></h4>
+            <p class="description">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+          </div>
+          <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="400">
+            <div class="icon"><i class="bi bi-gem"></i></div>
+            <h4 class="title"><a href="">UX-UI Designer</a></h4>
+            <p class="description">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque</p>
+          </div>
+          <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="500">
+            <div class="icon"><i class="bi bi-camera"></i></div>
+            <h4 class="title"><a href="">Photographer</a></h4>
+            <p class="description">Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi</p>
           </div>
         </div>
-        <div class="col-lg-4 p-3">
-          <div class="card">
-            <div class="card-body bg-info p-0"> <img class="d-block mb-3 mx-auto img-fluid w-100" src="assets/edit/youha.jpg" width="210" height="160">
-              <h4>Yoha Oishi</h4>
-              <h6>Engineer</h6>
-            </div>
-          </div>
+
+      </div>
+    </section><!-- End Services Section -->
+
+    <!-- ======= Testimonials Section ======= -->
+    <section id="testimonials" class="testimonials section-bg">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Testimonials</h2>
+          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
         </div>
-        <div class="col-lg-4 p-3">
-          <div class="card">
-            <div class="card-body bg-info p-0"> <img class="d-block mb-3 mx-auto img-fluid w-100" src="assets/edit/Poizun_bw.jpg" width="210" height="160">
-              <h4>Shun Kitamachi</h4>
-              <p class="mb-0" contenteditable="true">Designer</p>
-            </div>
+
+        <div class="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="100">
+          <div class="swiper-wrapper">
+            
+            <!-- ======= Soichi David Nakahashi ====== -->
+            <div class="swiper-slide">
+              <div class="testimonial-item" data-aos="fade-up">
+                <p>
+                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                  ドローンを研究開発する会社で偶然出会い、なぜか10年の付き合いになる。今では性格も体型も丸くなった思う。
+                  互いにいい影響を与えながら成長してきた仲間です。
+                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                </p>
+                <img src="assets/img/testimonials/testimonials-1.jpg" class="testimonial-img" alt="">
+                <h3>Soichi David Nakahashi</h3>
+                <h4>Ceo &amp; Engineer</h4>
+              </div>
+            </div><!-- End testimonial item -->
+
+          <!-- ======= Kosuke Ablul Obata ====== -->
+            <div class="swiper-slide">
+              <div class="testimonial-item" data-aos="fade-up" data-aos-delay="100">
+                <p>
+                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                  ５年前にBizreachで互いにプロダクトマネージャーとして一緒に働く。当時は衝突する事が多かったが、今では良く飲みに行く仲になる。
+                  意外と繊細な方です。
+                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                </p>
+                <img src="assets/img/testimonials/testimonials-2.jpg" class="testimonial-img" alt="">
+                <h3>Kosuke Ablul Obata</h3>
+                <h4>Ceo &amp; Engineer</h4>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <!-- ======= Shun Wilson Kitamachi ====== -->
+            <div class="swiper-slide">
+              <div class="testimonial-item" data-aos="fade-up" data-aos-delay="200">
+                <p>
+                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                  ビジネス系マッチングサービスで偶然マッチングした事を、機会に色々な相談をするようになる。
+                  別会社でもチームを組んで一緒に働いた経験もあります。
+                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                </p>
+                <img src="assets/img/testimonials/testimonials-3.jpg" class="testimonial-img" alt="">
+                <h3>Shun Wilson Kitamachi</h3>
+                <h4>Art Director</h4>
+              </div>
+            </div><!-- End testimonial item -->
+
+           <!-- ======= Yasushi Astin Ikeda ====== -->
+            <div class="swiper-slide">
+              <div class="testimonial-item" data-aos="fade-up" data-aos-delay="300">
+                <p>
+                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                  Davidさんからの紹介でjirettai.incにジョインする。コーポレートサイトの制作をきっかけに
+                  今でも更新や運用を手伝う。普段は優しい人です。
+                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                </p>
+                <img src="assets/img/testimonials/testimonials-4.jpg" class="testimonial-img" alt="">
+                <h3>Yasushi Astin Ikeda</h3>
+                <h4>Frontend Engineer</h4>
+              </div>
+            </div><!-- End testimonial item -->
+           
+            <!-- ======= Yoha Nikita Oshi ====== -->
+            <div class="swiper-slide">
+              <div class="testimonial-item" data-aos="fade-up" data-aos-delay="400">
+                <p>
+                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                  ５年前にBizreachで一緒に働く事を機会に仲良くなる。モバイル開発の知見が豊富でチームを引っ張ってくれた。
+                  コーポレートサイトの制作を一部手伝う。 
+                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                </p>
+                <img src="assets/img/testimonials/testimonials-5.jpg" class="testimonial-img" alt="">
+                <h3>Yoha Nikita Oshi</h3>
+                <h4>Engineer</h4>
+              </div>
+            </div><!-- End testimonial item -->
+
           </div>
+          <div class="swiper-pagination"></div>
+        </div>
+
+      </div>
+    </section><!-- End Testimonials Section -->
+
+    <!-- ======= Contact Section ======= -->
+    <section id="contact" class="contact">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Contact</h2>
+          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
         </div>
       </div>
-    </div>
-  </div>
-  <div class="text-center w-100 h-100 section-fade-in-out pt-5 py-5 mt-5 my-5" style="	background-image: url(&quot;assets/edit/jirettai_members.jpg&quot;);	background-size: cover;	background-position: center bottom;	background-repeat: repeat;" id="info">
+    </section><!-- End Contact Section -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
     <div class="container">
-      <div class="row">
-        <div class="col-md-12 mt-5 my-5 pt-5 py-5"><img class="d-block rounded mx-auto mt-5 mb-2" width="110" height="80" src="assets/edit/logo@1x.svg">
-          <h4 class="pb-5 mb-3 text-center"><b>JIRETTAI&nbsp;</b><br><b>Experiment place for pointed creators.&nbsp;<br>Suspecting common sense and thinking that everyone thinks<br>&nbsp; Bring a different perspective.<br><br>&nbsp;Breaking the mold so far,&nbsp;</b><br><b>Create new molds with their own hands,<br>&nbsp;And even that keeps breaking.&nbsp;</b><br><br><b>Continue to face that kind of frustration Passion creates the future.&nbsp;<br>The standard of the future starts with our invention</b></h4>
-          <p>Japan Tokyo<a href="https://goo.gl/maps/AUq7b9W7yYJ2" target="_blank"><br></a>Shibuyaku Shibuya 3-13-5</p>
-          <p class="mb-0"> Tell:&nbsp;<a href="tel:+246 - 542 550 5462">+81&nbsp;</a>&nbsp;080-4265-9971</p>
-          <p class="mb-0">Email: m.mizogaki.job<a href="mailto:m.mizogaki.job@gmail.com">@gmail.com</a> </p>
-          <h6 class="text-center mt-1"><a href="#">© 2012-2022 jirettai.llc&nbsp; All rights reserved</a></h6>
-        </div>
+      <div class="copyright">
+        &copy; Copyright <strong><span><a href="https://jirettai.com">Jirettai.inc</a></span></strong>
       </div>
-      <div class="row"></div>
-      <div class="row"></div>
+      <div class="credits">
+        Created by <strong><a href="https://jirettai.com/members/oliver">Masahito Mizogaki</a></strong>
+      </div>
     </div>
-  </div>
-  <!-- Intro section -->
-  <!-- Speakers -->
-  <!-- Schedule -->
-  <!-- Sponsor logos -->
-  <!-- Call to action -->
-  <!-- Footer -->
-  <!-- JavaScript dependencies -->
-  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-  <!-- Script: Smooth scrolling between anchors in a same page -->
-  <script src="js/smooth-scroll.js"></script>
+  </footer><!-- End  Footer -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/typed.js/typed.min.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
 </body>
 
 </html>
