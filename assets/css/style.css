@@ -832,7 +832,7 @@ section {
 
 .contact .info {
   padding: 30px;
-  background: #fff;
+  background: #000000;
   width: 100%;
   box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.12);
 }
@@ -843,7 +843,7 @@ section {
   float: left;
   width: 44px;
   height: 44px;
-  background: #dff3fc;
+  background: #000000;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -852,11 +852,10 @@ section {
 }
 
 .contact .info h4 {
-  padding: 0 0 0 60px;
-  font-size: 22px;
-  font-weight: 600;
-  margin-bottom: 5px;
-  color: #050d18;
+  font-size: 25px;
+  font-weight: bold;
+  text-align: center;
+  color: rgb(255, 255, 255);
 }
 
 .contact .info p {
