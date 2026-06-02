@@ -39,6 +39,19 @@ body {
   animation: gridDrift 42s linear infinite;
 }
 
+body *,
+body *::before,
+body *::after {
+  box-shadow: none !important;
+  text-shadow: none !important;
+}
+
+body *:not(img),
+body *:not(img)::before,
+body *:not(img)::after {
+  filter: none !important;
+}
+
 a {
   color: inherit;
   text-decoration: none;
