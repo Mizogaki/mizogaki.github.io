@@ -664,7 +664,10 @@ main [data-aos],
 .home-glyph,
 .home-panel,
 .home-blocks,
-.home-square {
+.home-square,
+.hud-plus,
+.micro-terminal,
+.checksum {
   position: absolute;
 }
 
@@ -778,6 +781,105 @@ main [data-aos],
   left: 20%;
   top: 22%;
   animation-delay: 2.2s;
+}
+
+.hud-plus {
+  width: 44px;
+  height: 44px;
+  opacity: 0.46;
+  animation: microFlicker 8.2s steps(1, end) infinite;
+}
+
+.hud-plus::before,
+.hud-plus::after {
+  content: "";
+  position: absolute;
+  background: var(--acid);
+  box-shadow: 0 0 18px rgba(214, 255, 72, 0.24);
+}
+
+.hud-plus::before {
+  left: 50%;
+  top: 0;
+  width: 2px;
+  height: 100%;
+  transform: translateX(-50%);
+}
+
+.hud-plus::after {
+  left: 0;
+  top: 50%;
+  width: 100%;
+  height: 2px;
+  transform: translateY(-50%);
+}
+
+.hud-plus-a {
+  left: 10%;
+  top: 38%;
+}
+
+.hud-plus-b {
+  right: 16%;
+  top: 36%;
+  animation-delay: 1.6s;
+}
+
+.hud-plus-c {
+  right: 6%;
+  bottom: 19%;
+  animation-delay: 2.8s;
+}
+
+.micro-terminal {
+  color: rgba(214, 255, 72, 0.58);
+  font-family: var(--font-mono);
+  font-size: 10px;
+  font-weight: 900;
+  line-height: 1.55;
+  letter-spacing: 0.14em;
+  text-align: left;
+  text-shadow: 0 0 14px rgba(214, 255, 72, 0.16);
+  animation: terminalDrift 9.6s steps(1, end) infinite;
+}
+
+.micro-terminal-a {
+  left: 9%;
+  bottom: 23%;
+}
+
+.micro-terminal-b {
+  right: 7%;
+  bottom: 33%;
+  animation-delay: 1.8s;
+}
+
+.checksum {
+  display: grid;
+  grid-template-columns: repeat(3, 12px);
+  gap: 6px;
+  opacity: 0.66;
+}
+
+.checksum i {
+  display: block;
+  width: 12px;
+  height: 12px;
+  background:
+    linear-gradient(45deg, var(--acid) 0 25%, transparent 25% 50%, var(--acid) 50% 75%, transparent 75%);
+  background-size: 8px 8px;
+  animation: checksumStep 4.8s steps(1, end) infinite;
+}
+
+.checksum-a {
+  left: 16%;
+  top: 52%;
+}
+
+.checksum-b {
+  right: 13%;
+  bottom: 24%;
+  animation-delay: 1.4s;
 }
 
 .vector {
@@ -1185,10 +1287,18 @@ main [data-aos],
 
 .title-sub {
   margin-top: 18px;
-  font-family: var(--font-display);
-  font-size: clamp(28px, 4.1vw, 68px);
-  font-weight: 400;
-  line-height: 1;
+  padding: 8px 22px 10px;
+  color: var(--black);
+  background: var(--acid);
+  font-family: "Arial Black", var(--font-ui);
+  font-size: clamp(28px, 4.9vw, 78px);
+  font-weight: 900;
+  line-height: 0.9;
+  letter-spacing: 0;
+  -webkit-text-fill-color: var(--black);
+  clip-path: polygon(0 0, calc(100% - 18px) 0, 100% 18px, 100% 100%, 0 100%);
+  text-shadow: none;
+  animation: titleBandPulse 7.4s steps(1, end) infinite;
 }
 
 .glitch-title::before,
@@ -1208,6 +1318,82 @@ main [data-aos],
   opacity: 0;
   transform: translateY(16px);
   animation: textBoot 0.82s cubic-bezier(0.16, 1, 0.3, 1) 0.58s both;
+}
+
+.marathon-microbar {
+  display: inline-grid;
+  grid-template-columns: repeat(4, auto) auto auto;
+  gap: 14px;
+  align-items: center;
+  margin: 0 0 20px;
+  color: rgba(214, 255, 72, 0.7);
+  font-family: var(--font-mono);
+  font-size: 12px;
+  font-weight: 900;
+  letter-spacing: 0.14em;
+  opacity: 0;
+  transform: translateY(12px);
+  animation: textBoot 0.74s cubic-bezier(0.16, 1, 0.3, 1) 0.48s both, microBarPulse 8.4s steps(1, end) 1.4s infinite;
+}
+
+.marathon-microbar strong,
+.marathon-microbar em {
+  font-style: normal;
+  font-weight: 900;
+}
+
+.micro-icon {
+  position: relative;
+  display: inline-block;
+  width: 26px;
+  height: 20px;
+}
+
+.micro-bars {
+  background:
+    linear-gradient(var(--acid), var(--acid)) 0 0 / 4px 20px no-repeat,
+    linear-gradient(var(--acid), var(--acid)) 9px 0 / 8px 20px no-repeat,
+    linear-gradient(var(--acid), var(--acid)) 22px 0 / 4px 20px no-repeat;
+}
+
+.micro-dot {
+  border: 3px solid var(--acid);
+}
+
+.micro-dot::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 6px;
+  height: 6px;
+  background: var(--acid);
+  transform: translate(-50%, -50%);
+}
+
+.micro-x::before,
+.micro-x::after {
+  content: "";
+  position: absolute;
+  left: 12px;
+  top: -2px;
+  width: 3px;
+  height: 25px;
+  background: var(--acid);
+}
+
+.micro-x::before {
+  transform: rotate(45deg);
+}
+
+.micro-x::after {
+  transform: rotate(-45deg);
+}
+
+.micro-cell {
+  background:
+    linear-gradient(45deg, var(--acid) 0 25%, transparent 25% 50%, var(--acid) 50% 75%, transparent 75%);
+  background-size: 10px 10px;
 }
 
 .hero-actions,
@@ -2366,12 +2552,31 @@ main [data-aos],
 .contact-panel,
 .intro-panel,
 .portrait-frame {
+  position: relative;
+  overflow: hidden;
   border-radius: 0;
   background:
     linear-gradient(180deg, rgba(214, 255, 72, 0.04), transparent 42%),
     rgba(2, 4, 3, 0.76);
   border: 1px solid rgba(214, 255, 72, 0.28);
   clip-path: polygon(0 0, calc(100% - 18px) 0, 100% 18px, 100% 100%, 0 100%);
+}
+
+.service-card::after,
+.career-item::after,
+.contact-panel::after {
+  content: "";
+  position: absolute;
+  right: 16px;
+  top: 16px;
+  width: 42px;
+  height: 8px;
+  background:
+    linear-gradient(var(--acid), var(--acid)) 0 0 / 18px 8px no-repeat,
+    linear-gradient(var(--acid), var(--acid)) 24px 0 / 8px 8px no-repeat,
+    linear-gradient(var(--acid), var(--acid)) 36px 0 / 6px 8px no-repeat;
+  opacity: 0.54;
+  animation: microFlicker 6.6s steps(1, end) infinite;
 }
 
 .impact-item::after,
@@ -2602,6 +2807,114 @@ main [data-aos],
 
   72% {
     opacity: 0.32;
+  }
+}
+
+@keyframes microFlicker {
+  0%,
+  41%,
+  100% {
+    opacity: 0.46;
+    filter: none;
+  }
+
+  43% {
+    opacity: 0.92;
+    filter: drop-shadow(0 0 16px rgba(214, 255, 72, 0.32));
+  }
+
+  45% {
+    opacity: 0.18;
+  }
+
+  49% {
+    opacity: 0.62;
+  }
+}
+
+@keyframes terminalDrift {
+  0%,
+  56%,
+  100% {
+    opacity: 0.52;
+    transform: translate(0, 0);
+  }
+
+  58% {
+    opacity: 0.84;
+    transform: translate(2px, -1px);
+  }
+
+  60% {
+    opacity: 0.24;
+    transform: translate(-1px, 1px);
+  }
+
+  64% {
+    opacity: 0.58;
+    transform: translate(0, 0);
+  }
+}
+
+@keyframes checksumStep {
+  0%,
+  100% {
+    opacity: 0.68;
+    transform: translateY(0);
+  }
+
+  34% {
+    opacity: 1;
+    transform: translateY(-1px);
+  }
+
+  36% {
+    opacity: 0.22;
+    transform: translateY(1px);
+  }
+
+  42% {
+    opacity: 0.78;
+    transform: translateY(0);
+  }
+}
+
+@keyframes titleBandPulse {
+  0%,
+  100% {
+    box-shadow: 0 0 22px rgba(214, 255, 72, 0.12);
+  }
+
+  52% {
+    box-shadow: 0 0 34px rgba(214, 255, 72, 0.24);
+  }
+
+  54% {
+    opacity: 0.84;
+  }
+
+  58% {
+    opacity: 1;
+  }
+}
+
+@keyframes microBarPulse {
+  0%,
+  64%,
+  100% {
+    opacity: 0.72;
+  }
+
+  66% {
+    opacity: 1;
+  }
+
+  68% {
+    opacity: 0.36;
+  }
+
+  72% {
+    opacity: 0.82;
   }
 }
 
@@ -4059,6 +4372,10 @@ main [data-aos],
   .home-panel-a,
   .home-panel-b,
   .home-glyph-b,
+  .hud-plus-b,
+  .hud-plus-c,
+  .micro-terminal,
+  .checksum,
   .home-blocks-b,
   .home-square-c {
     display: none;
@@ -4177,8 +4494,20 @@ main [data-aos],
 
   .title-sub {
     margin-top: 12px;
+    padding: 7px 10px 8px;
     font-size: 22px;
     line-height: 1.05;
+  }
+
+  .marathon-microbar {
+    grid-template-columns: repeat(4, auto);
+    gap: 10px;
+    margin-bottom: 16px;
+    font-size: 10px;
+  }
+
+  .marathon-microbar em {
+    grid-column: 1 / -1;
   }
 
   .hero-lead {
