@@ -4185,6 +4185,33 @@ main [data-aos],
 }
 
 @media (max-width: 640px) {
+  .back-to-top {
+    display: none !important;
+  }
+
+  #header {
+    left: -100vw;
+    width: 100vw;
+    padding: 72px 28px 36px;
+  }
+
+  #header .sidebar-hud,
+  .mobile-nav-active #header .sidebar-hud {
+    display: none;
+  }
+
+  #header .profile img {
+    width: min(100%, 220px);
+    height: auto;
+    aspect-ratio: 1 / 1.14;
+  }
+
+  .nav-menu a,
+  .nav-menu a:focus {
+    min-height: 58px;
+    margin-bottom: 10px;
+  }
+
   section {
     padding: 54px 0;
   }
@@ -4194,8 +4221,9 @@ main [data-aos],
   }
 
   #about .section-title h2 {
-    font-size: 34px;
-    line-height: 1.02;
+    font-size: clamp(28px, 8vw, 31px);
+    line-height: 1.08;
+    overflow-wrap: anywhere;
   }
 
   #about .section-title p {
@@ -4215,18 +4243,13 @@ main [data-aos],
 
   .home-marathon-ui::before,
   .home-marathon-ui::after {
-    left: 18px;
-    right: 18px;
-    font-size: 8px;
-    letter-spacing: 0.12em;
-  }
-
-  .home-marathon-ui::after {
     display: none;
   }
 
+  .home-glyph-a,
   .home-panel-a,
   .home-panel-b,
+  .hud-plus-a,
   .home-glyph-b,
   .home-glyph-c,
   .hud-plus-b,
@@ -4405,6 +4428,10 @@ main [data-aos],
   .intro-panel,
   .contact-panel {
     padding: 26px;
+  }
+
+  .intro-panel::after {
+    display: none;
   }
 
   .focus-list div,
