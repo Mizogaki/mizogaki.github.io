@@ -200,19 +200,6 @@ h6 {
   border-bottom: 1px solid rgba(214, 255, 72, 0.24);
 }
 
-#header .profile::before {
-  content: "MZ";
-  position: absolute;
-  right: -18px;
-  top: 18px;
-  z-index: -1;
-  color: rgba(214, 255, 72, 0.12);
-  font-family: var(--font-display);
-  font-size: 86px;
-  line-height: 0.8;
-  letter-spacing: 0;
-}
-
 #header .profile::after {
   content: "";
   position: absolute;
@@ -2389,103 +2376,12 @@ main [data-aos],
   animation: homeGridFlicker 9s steps(1, end) infinite;
 }
 
-#services::after,
-#work::after,
-#career::after,
-#contact::after {
-  position: absolute;
-  right: -3vw;
-  top: 78px;
-  z-index: 0;
-  color: rgba(214, 255, 72, 0.13);
-  font-family: "Arial Black", var(--font-ui);
-  font-size: clamp(76px, 12vw, 180px);
-  font-weight: 900;
-  line-height: 0.82;
-  letter-spacing: 0;
-  pointer-events: none;
-  text-transform: uppercase;
-  text-shadow: 0 0 34px rgba(214, 255, 72, 0.08);
-}
-
-#services::after {
-  content: "MAKE";
-}
-
-#work::after {
-  content: "MISSIONS";
-}
-
-#career::after {
-  content: "RUN";
-}
-
-#contact::after {
-  content: "COMMS";
-}
-
 #services .container,
 #work .container,
 #career .container,
 #contact .container {
   position: relative;
   z-index: 1;
-}
-
-#services .container::before,
-#work .container::before,
-#career .container::before,
-#contact .container::before {
-  content: "";
-  position: absolute;
-  left: clamp(0px, 3vw, 46px);
-  top: 10px;
-  z-index: -1;
-  width: clamp(92px, 10vw, 148px);
-  height: clamp(58px, 6vw, 88px);
-  background:
-    linear-gradient(var(--acid), var(--acid)) 0 0 / 54px 4px no-repeat,
-    linear-gradient(var(--acid), var(--acid)) 0 0 / 4px 34px no-repeat,
-    linear-gradient(var(--acid), var(--acid)) 34px 28px / 58px 10px no-repeat,
-    linear-gradient(var(--acid), var(--acid)) 34px 48px / 32px 10px no-repeat,
-    radial-gradient(circle, var(--acid) 0 6px, transparent 7px) 84px 48px / 18px 18px no-repeat;
-  opacity: 0.18;
-  filter: drop-shadow(0 0 18px rgba(214, 255, 72, 0.24));
-  mix-blend-mode: screen;
-  animation: detailPulse 9.2s steps(1, end) infinite;
-}
-
-#work .container::before {
-  left: auto;
-  right: clamp(0px, 3vw, 46px);
-  background:
-    linear-gradient(var(--acid), var(--acid)) 0 0 / 78px 8px no-repeat,
-    linear-gradient(var(--acid), var(--acid)) 0 26px / 112px 8px no-repeat,
-    linear-gradient(var(--acid), var(--acid)) 0 52px / 58px 8px no-repeat,
-    radial-gradient(circle, var(--acid) 0 6px, transparent 7px) 118px 48px / 18px 18px no-repeat;
-  animation-delay: 1.2s;
-}
-
-#career .container::before {
-  top: 4px;
-  background:
-    linear-gradient(var(--acid), var(--acid)) 22px 0 / 8px 82px no-repeat,
-    linear-gradient(var(--acid), var(--acid)) 22px 10px / 104px 12px no-repeat,
-    linear-gradient(var(--acid), var(--acid)) 22px 42px / 78px 12px no-repeat,
-    linear-gradient(var(--acid), var(--acid)) 22px 72px / 112px 12px no-repeat,
-    radial-gradient(circle, var(--acid) 0 7px, transparent 8px) 0 4px / 20px 20px no-repeat;
-  animation-delay: 2s;
-}
-
-#contact .container::before {
-  left: auto;
-  right: clamp(0px, 3vw, 46px);
-  background:
-    linear-gradient(var(--acid), var(--acid)) 0 22px / 48px 34px no-repeat,
-    linear-gradient(135deg, transparent 0 35%, var(--acid) 36% 66%, transparent 67%) 42px 4px / 58px 72px no-repeat,
-    linear-gradient(var(--acid), var(--acid)) 110px 0 / 10px 84px no-repeat,
-    linear-gradient(var(--acid), var(--acid)) 132px 10px / 8px 64px no-repeat;
-  animation-delay: 2.8s;
 }
 
 #services .section-title,
@@ -2787,26 +2683,6 @@ main [data-aos],
   64% {
     opacity: 1;
     transform: scale(1);
-  }
-}
-
-@keyframes detailPulse {
-  0%,
-  62%,
-  100% {
-    opacity: 0.24;
-  }
-
-  64% {
-    opacity: 0.42;
-  }
-
-  68% {
-    opacity: 0.14;
-  }
-
-  72% {
-    opacity: 0.32;
   }
 }
 
@@ -4379,14 +4255,6 @@ main [data-aos],
   .home-blocks-b,
   .home-square-c {
     display: none;
-  }
-
-  #services .container::before,
-  #work .container::before,
-  #career .container::before,
-  #contact .container::before {
-    width: 46px;
-    opacity: 0.08;
   }
 
   .motion-layer {
