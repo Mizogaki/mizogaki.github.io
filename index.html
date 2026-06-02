@@ -71,8 +71,15 @@
   <i class="bi bi-list mobile-nav-toggle d-xl-none" aria-label="ナビゲーションを開く"></i>
 
   <header id="header">
+    <div class="sidebar-hud" aria-hidden="true">
+      <span class="sidebar-code">05</span>
+      <span class="sidebar-wake">[WAKE]</span>
+      <span class="sidebar-corner sidebar-corner-top"></span>
+      <span class="sidebar-corner sidebar-corner-bottom"></span>
+    </div>
     <div class="d-flex flex-column">
       <div class="profile">
+        <span class="profile-badge">MZ // RUNNER 2011</span>
         <img src="assets/img/profile-img.jpg" alt="Masahito Mizogakiのプロフィール写真" class="img-fluid rounded-circle" loading="lazy">
         <h1 class="text-light"><a href="#hero">Masahito Mizogaki</a></h1>
         <p class="profile-role">Strategy / Product Ops / PMO</p>
@@ -83,16 +90,21 @@
           <a href="https://jp.linkedin.com/in/mizogaki" class="linkedin" aria-label="LinkedIn"><i class="bx bxl-linkedin"></i></a>
           <a href="https://github.com/Mizogaki" class="github" aria-label="GitHub"><i class="bx bxl-github"></i></a>
         </div>
+        <div class="sidebar-terminal" aria-hidden="true">
+          <span>OPS STABLE</span>
+          <span>CAREER 2011</span>
+          <span>PRODUCT RUNNER</span>
+        </div>
       </div>
 
       <nav id="navbar" class="nav-menu navbar">
         <ul>
-          <li><a href="#hero" class="nav-link scrollto active"><i class="bx bx-home"></i><span>Home</span></a></li>
-          <li><a href="#about" class="nav-link scrollto"><i class="bx bx-user"></i><span>Profile</span></a></li>
-          <li><a href="#services" class="nav-link scrollto"><i class="bx bx-layer"></i><span>Capabilities</span></a></li>
-          <li><a href="#work" class="nav-link scrollto"><i class="bx bx-book-content"></i><span>Missions</span></a></li>
-          <li><a href="#career" class="nav-link scrollto"><i class="bx bx-briefcase"></i><span>Career Log</span></a></li>
-          <li><a href="#contact" class="nav-link scrollto"><i class="bx bx-envelope"></i><span>Contact</span></a></li>
+          <li><a href="#hero" class="nav-link scrollto active" data-code="01"><i class="bx bx-home"></i><span>Home</span></a></li>
+          <li><a href="#about" class="nav-link scrollto" data-code="02"><i class="bx bx-user"></i><span>Profile</span></a></li>
+          <li><a href="#services" class="nav-link scrollto" data-code="03"><i class="bx bx-layer"></i><span>Capabilities</span></a></li>
+          <li><a href="#work" class="nav-link scrollto" data-code="04"><i class="bx bx-book-content"></i><span>Missions</span></a></li>
+          <li><a href="#career" class="nav-link scrollto" data-code="05"><i class="bx bx-briefcase"></i><span>Career Log</span></a></li>
+          <li><a href="#contact" class="nav-link scrollto" data-code="06"><i class="bx bx-envelope"></i><span>Contact</span></a></li>
         </ul>
       </nav>
     </div>
@@ -101,51 +113,34 @@
   <section id="hero" class="hero-section">
     <div class="hero-shade"></div>
     <div class="hero-noise" aria-hidden="true"></div>
-    <div class="hero-scan" aria-hidden="true"></div>
     <div class="combat-frame" aria-hidden="true">
       <span class="corner corner-tl"></span>
       <span class="corner corner-tr"></span>
       <span class="corner corner-bl"></span>
       <span class="corner corner-br"></span>
-      <span class="reticle"></span>
-      <span class="vector vector-a"></span>
-      <span class="vector vector-b"></span>
     </div>
-    <div class="calibration-bars" aria-hidden="true">
-      <span></span>
-      <span></span>
-      <span></span>
-      <span></span>
-    </div>
-    <div class="motion-layer" aria-hidden="true">
-      <span class="runner runner-a"></span>
-      <span class="runner runner-b"></span>
-      <span class="runner runner-c"></span>
-      <span class="node node-a"></span>
-      <span class="node node-b"></span>
-      <span class="node node-c"></span>
-    </div>
-    <div class="attack-layer" aria-hidden="true">
-      <span class="slash slash-a"></span>
-      <span class="slash slash-b"></span>
-      <span class="slash slash-c"></span>
-      <span class="pulse pulse-a"></span>
-      <span class="pulse pulse-b"></span>
-      <span class="lock lock-a"></span>
-      <span class="lock lock-b"></span>
+    <div class="home-marathon-ui" aria-hidden="true">
+      <span class="home-glyph home-glyph-a">05</span>
+      <span class="home-glyph home-glyph-b">*:WAKE</span>
+      <span class="home-glyph home-glyph-c">SEN(MEM) STABLE</span>
+      <span class="home-blocks home-blocks-a"><i></i><i></i><i></i><i></i></span>
+      <span class="home-blocks home-blocks-b"><i></i><i></i><i></i></span>
+      <span class="home-panel home-panel-a">MAKE // PLAN // SHIP</span>
+      <span class="home-panel home-panel-b">PRODUCT RUNNER 2011</span>
+      <span class="home-square home-square-a"></span>
+      <span class="home-square home-square-b"></span>
+      <span class="home-square home-square-c"></span>
     </div>
     <div class="hero-container" data-aos="fade-up">
-      <p class="eyebrow">Mission Control / Product Strategy / Delivery Ops</p>
-      <h2 class="glitch-title" data-text="CREATIVE SYSTEMS FOR PRODUCT MISSIONS.">
-        <span class="title-unit">CREATIVE</span>
-        <span class="title-unit">SYSTEMS</span>
-        <span class="title-unit">FOR PRODUCT</span>
-        <span class="title-unit">MISSIONS.</span>
+      <p class="eyebrow">[WAKE] Product Strategy / Delivery Ops</p>
+      <h2 class="glitch-title" data-text="MAKE">
+        <span class="title-unit title-main">MAKE</span>
+        <span class="title-unit title-sub">PRODUCT MISSIONS.</span>
       </h2>
-      <p class="hero-lead">I translate ambiguous business challenges into executable product plans. Strategy, requirements, team operations, UX, and delivery are connected as one mission.</p>
+      <p class="hero-lead">Business intent, UX, requirements, and delivery systems locked into one executable product run.</p>
       <div class="hero-actions">
-        <a class="btn-primary scrollto" href="#contact"><i class="bi bi-send"></i>Start a Mission</a>
-        <a class="btn-secondary scrollto" href="#work"><i class="bi bi-grid-3x3-gap"></i>View Missions</a>
+        <a class="btn-primary scrollto" href="#contact"><i class="bi bi-send"></i>Contact</a>
+        <a class="btn-secondary scrollto" href="#work"><i class="bi bi-grid-3x3-gap"></i>Track Record</a>
       </div>
       <div class="ops-hud" aria-label="対応領域の概要">
         <div>
@@ -169,7 +164,17 @@
 
   <main id="main">
     <section id="about" class="about">
+      <div class="profile-marathon-ui" aria-hidden="true">
+        <span class="profile-corner profile-corner-tl"></span>
+        <span class="profile-corner profile-corner-tr"></span>
+        <span class="profile-corner profile-corner-bl"></span>
+        <span class="profile-corner profile-corner-br"></span>
+        <span class="profile-glyph profile-glyph-a">05</span>
+        <span class="profile-glyph profile-glyph-b">*:MZ</span>
+        <span class="profile-glyph profile-glyph-c">[WAKE]</span>
+      </div>
       <div class="container">
+        <div class="profile-marathon-word" aria-hidden="true">PROFILE</div>
         <div class="section-title" data-aos="fade-up">
           <span>Profile</span>
           <h2>From business intent to product execution.</h2>
@@ -180,11 +185,19 @@
           <div class="col-lg-5" data-aos="fade-right">
             <figure class="portrait-frame">
               <img src="assets/img/profile-img3.jpg" class="img-fluid" alt="Masahito Mizogakiのポートレート" loading="lazy">
+              <span class="portrait-scan" aria-hidden="true"></span>
+              <span class="portrait-bars" aria-hidden="true"></span>
+              <span class="portrait-code" aria-hidden="true">RUNNER // 2011</span>
             </figure>
           </div>
           <div class="col-lg-7" data-aos="fade-left">
             <div class="intro-panel">
-              <h3>Masahito Mizogaki / 溝垣 雅人</h3>
+              <h3>Masahito Mizogaki</h3>
+              <div class="profile-terminal" aria-hidden="true">
+                <span>CAREER 2011</span>
+                <span>PRODUCT OPS</span>
+                <span>JIRETTAI INC</span>
+              </div>
               <p>企画、顧客折衝、要件定義、設計、開発体制づくり、採用、分析、UX改善まで、プロダクトを前進させるための実務を幅広く担当してきました。特に「技術・事業・ユーザー体験」の翻訳が必要な局面を得意としています。</p>
               <div class="focus-list">
                 <div>
