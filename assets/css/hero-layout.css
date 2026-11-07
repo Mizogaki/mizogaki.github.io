@@ -1,0 +1,11 @@
+/* The desktop placement pass owns coordinates, while the build scene still
+   owns each real target's clipping, opacity and construction animation. */
+@media (min-width: 1000px) {
+  .home-marathon-ui[data-hero-layout="desktop"] > .hero-layout-decoration {
+    right: auto;
+    bottom: auto;
+    white-space: nowrap;
+    /* Keep the terminal's decorative flicker from changing its layout box. */
+    transform: none !important;
+  }
+}

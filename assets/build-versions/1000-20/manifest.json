@@ -1,0 +1,35 @@
+{
+  "version": "1000-20",
+  "files": [
+    {
+      "path": "index.html",
+      "sha256": "fd81527210b23075c3ce8421976e2778096296a114f37bffeec6f2fd1e6b0f4e",
+      "bytes": 21692
+    },
+    {
+      "path": "assets/js/build-scene.js",
+      "sha256": "3bcb207eeccccf256fa5b40d0084896778163c5349d5119c2d3857b906d6d0d8",
+      "bytes": 43927
+    },
+    {
+      "path": "assets/js/build-details.js",
+      "sha256": "98cb520758e7272c7f3eaff4cd96aba4b394f4126414ad4dfe30ed67241b3ce2",
+      "bytes": 8511
+    },
+    {
+      "path": "assets/js/build-steps.js",
+      "sha256": "0899b4d9727c66b38078ac81152444a2dcd0a3e6ded7b874c4dd5c835bbab1cd",
+      "bytes": 3227
+    },
+    {
+      "path": "assets/css/build-scene.css",
+      "sha256": "aa61f4d611317a99a3b06b77856b27990b133d46c6069a4a98d37887b9e90489",
+      "bytes": 8534
+    },
+    {
+      "path": "assets/css/build-details.css",
+      "sha256": "e6c5e7a2d04df2c35fbbadf2e41370692a94f26c887ada2473170b2dd9931047",
+      "bytes": 1640
+    }
+  ]
+}

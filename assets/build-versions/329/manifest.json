@@ -1,0 +1,30 @@
+{
+  "version": "329",
+  "files": [
+    {
+      "path": "index.html",
+      "sha256": "d7da4514005225ed4356597870bf2afcc6d5461b5a40016e5c306d86949eb1f2",
+      "bytes": 21641
+    },
+    {
+      "path": "assets/js/build-scene.js",
+      "sha256": "9f47dcc98ced82016bfa006473cae72a1eef3919d4d24692796d8a3971d13140",
+      "bytes": 33829
+    },
+    {
+      "path": "assets/js/build-details.js",
+      "sha256": "98cb520758e7272c7f3eaff4cd96aba4b394f4126414ad4dfe30ed67241b3ce2",
+      "bytes": 8511
+    },
+    {
+      "path": "assets/css/build-scene.css",
+      "sha256": "d807c2655a1fbb9e20ecb78e23b35273097ca015b6989439cf9d23138b4b24ee",
+      "bytes": 8148
+    },
+    {
+      "path": "assets/css/build-details.css",
+      "sha256": "e6c5e7a2d04df2c35fbbadf2e41370692a94f26c887ada2473170b2dd9931047",
+      "bytes": 1640
+    }
+  ]
+}

@@ -1,0 +1,57 @@
+/* Neutral children preserve the original pseudo layout without broad span/i styles. */
+build-detail[data-build-detail] {
+  pointer-events: none;
+  animation: none;
+  transition: none;
+}
+
+build-copy[data-build-copy] {
+  display: inline-block;
+  min-width: 0;
+  font: inherit;
+  line-height: inherit;
+  letter-spacing: inherit;
+  color: inherit;
+  text-transform: inherit;
+}
+
+[data-build-source-before]::before,
+[data-build-source-after]::after {
+  content: none !important;
+}
+
+/* This class exists only inside the synchronous responsive measurement pass. */
+html.build-details-measuring build-detail[data-build-detail] {
+  display: none !important;
+}
+
+html.build-details-measuring *::before,
+html.build-details-measuring *::after {
+  animation: none !important;
+  transition: none !important;
+}
+
+/* Preserve the original social button decoration response after materializing it. */
+#header .social-links > a:hover > build-detail[data-build-pseudo] {
+  background: var(--black) !important;
+}
+
+#header .social-links > a:hover > build-detail[data-build-pseudo="before"] {
+  transform: scaleX(1) !important;
+}
+
+/* Scroll navigation changes the owning link's active color after preparation. */
+#navbar .nav-link > build-detail[data-build-pseudo] {
+  color: inherit !important;
+}
+
+#navbar .nav-link > build-detail[data-build-pseudo="before"] {
+  background: transparent !important;
+  border-color: currentColor !important;
+}
+
+#navbar .nav-link.active > build-detail[data-build-pseudo="before"],
+#navbar .nav-link:hover > build-detail[data-build-pseudo="before"] {
+  background: var(--black) !important;
+  border-color: var(--black) !important;
+}
